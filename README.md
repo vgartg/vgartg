@@ -5,7 +5,7 @@
 
 ### :man_technologist: About me:
 
-I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">! My path began with independent study of such languages as Pascal, Python, Java and C#. Later, I began to consolidate the acquired knowledge when entering the institute. Now I am studying in the specialty of fundamental computer science, I have an incomplete higher education in one of the central universities in my region! I became interested in web development quite recently, started taking courses on Yandex Practicum on front-end development, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field.
+I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">! My path began with independent study of such languages as Pascal, Python, Java and C#. Later, I began to consolidate the acquired knowledge when entering the institute. Now I am studying in the specialty of fundamental computer science, I have an incomplete higher education in one of the central universities in my region:shipit:! I became interested in web development quite recently, started taking courses on Yandex Practicum on front-end development, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field.
 
 <!-- <p align="center">
  <img width="600" src="assets/github-snake.svg" alt="snake"/>
@@ -17,7 +17,7 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
 
 - :running: Strive for my goal!
 
-- :thought_balloon: How to contact me: [![Telegram Badge](https://img.shields.io/badge/-Telegram-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg) [![Gmail Badge](https://img.shields.io/badge/-Gmail-red?style=flat&logo=Gmail&logoColor=white)](gopik539@mail.ru)
+- :thought_balloon: How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg) [![Mail Badge](https://img.shields.io/badge/-Mail-red?style=flat&logo=Mail&logoColor=white)](gopik539@mail.ru)
 
 ---
 
@@ -27,14 +27,14 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
     <a href="https://vk.com/vgartg" target="_blank">
       <img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" width="40" height="40" alt="VK Badge"/>
     </a>
-    <a href="https://vk.com/vgartg" target="_blank">
-      <img src="https://img.icons8.com/?size=512&id=XGkTf9lgBjtL&format=png" width="40" height="40" alt="VK Badge"/>
+    <a href="https://instagram.com/vgartg" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="40" height="40" alt="VK Badge"/>
     </a>
   </div>
 
 ---
 
-### 💻 Технологии:
+### 💻 Technologies:
 
 <div>
  <!-- <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="git" alt="git" width="40" height="40"/>&nbsp
