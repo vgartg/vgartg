@@ -4,7 +4,7 @@
 
 ### 👨🏻‍💻 About me:
 
-I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">! My path began with independent study of such languages as Pascal, Python, Java and C#. Later, I began to consolidate the acquired knowledge when entering the institute. Now I am studying in the specialty of fundamental computer science, I have an incomplete higher education in one of the central universities in my region:shipit:! I became interested in web development quite recently, started taking courses on Yandex Practicum on front-end development, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field.
+I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">! My path began with independent study of such languages as Pascal, Python, Java and C#. Later, I began to consolidate the acquired knowledge when entering the university. Now I am studying the fundamental computer science, I have an incomplete higher education in one of the central universities in my region:shipit:! I became interested in web development quite recently, started taking courses on Yandex Practicum on front-end development, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field.
 
 <!-- <p align="center">
  <img width="600" src="assets/github-snake.svg" alt="snake"/>
@@ -39,8 +39,6 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
     <img src="https://cdn-icons-png.flaticon.com/512/3670/3670233.png" width="40" height="40" alt="Steam Badge"/>
    </a>
 </div>
-
- 
 
  ---
  
