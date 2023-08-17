@@ -17,7 +17,7 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
 
 - :running: Strive for my goal!
 
-- :thought_balloon: How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg) [![Mail Badge](https://img.shields.io/badge/-Mail-red?style=flat&logo=Mail&logoColor=white)](gopik539@mail.ru)
+- :thought_balloon: How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
 
 ---
 
@@ -28,8 +28,11 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
       <img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" width="40" height="40" alt="VK Badge"/>
     </a>
     <a href="https://instagram.com/vgartg" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="40" height="40" alt="VK Badge"/>
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="40" height="40" alt="Instagram Badge"/>
     </a>
+   <a href="mailto:gopik539@mail.com" terget="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2611/2611659.png" width="40" height="40" alt="Mail Badge"/>
+   </a>
   </div>
 
 ---
