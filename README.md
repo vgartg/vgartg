@@ -24,19 +24,19 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
 
   <div id="badges" align="center">
     <a href="https://vk.com/vgartg" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" width="50" height="50" alt="VK Badge"/>
+      <img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/145/145813.png" height="50" alt="VK Badge"/>
     </a>
     <a href="https://instagram.com/vgartg" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="50" height="50" alt="Instagram Badge"/>
+      <img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" height="50" alt="Instagram Badge"/>
     </a>
    <a href="mailto:gopik539@mail.com" terget="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/2611/2611659.png" width="50" height="50" alt="Mail Badge"/>
+    <img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/2611/2611659.png" height="50" alt="Mail Badge"/>
    </a>
    <a href="https://lichess.org/@/GROSSMEISTEER" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/1253/1253677.png" width="50" height="50" alt="Chess Badge"/>
+    <img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/1253/1253677.png" height="50" alt="Chess Badge"/>
    </a>
    <a href="https://steamcommunity.com/id/vgartg" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670233.png" width="50" height="50" alt="Steam Badge"/>
+    <img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/3670/3670233.png" height="50" alt="Steam Badge"/>
    </a>
 </div>
 
@@ -45,13 +45,27 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
  ### 💻 Technologies:
 
 <div align="center">  
-<a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#" height="50" /></a>
-<a href="https://www.java.com/ru/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="JavaScript" height="50" /></a>
-<a href="https://html.com/html5/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML" height="50" /></a>
-<a href="https://www.w3schools.com/w3css/default.asp" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" height="50" /></a>
-<a href="https://www.python.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" /></a>
-<a href="https://github.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="50" /></a>
-<a href="https://www.mysql.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg" alt="MySQL" height="50" /></a>
+<a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank">
+ <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#" height="50"/>
+</a>
+<a href="https://www.java.com/ru/" target="_blank">
+ <img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="JavaScript" height="50"/>
+</a>
+<a href="https://html.com/html5/" target="_blank">
+ <img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML" height="50"/>
+</a>
+<a href="https://www.w3schools.com/w3css/default.asp" target="_blank">
+ <img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" height="50"/>
+</a>
+<a href="https://www.python.org/" target="_blank">
+ <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50"/>
+</a>
+<a href="https://github.com/" target="_blank">
+ <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="50"/>
+</a>
+<a href="https://www.mysql.com/" target="_blank">
+ <img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg" alt="MySQL" height="50"/>
+</a>
 </div> 
 
 ---
