@@ -3,7 +3,7 @@
 
 ---
 
-### :man_technologist: About me:
+### 👨🏻‍💻 About me:
 
 I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">! My path began with independent study of such languages as Pascal, Python, Java and C#. Later, I began to consolidate the acquired knowledge when entering the institute. Now I am studying in the specialty of fundamental computer science, I have an incomplete higher education in one of the central universities in my region:shipit:! I became interested in web development quite recently, started taking courses on Yandex Practicum on front-end development, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field.
 
@@ -21,7 +21,7 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
 
 ---
 
-### 🤝 Social media:
+### 🤝🏻 Social media:
 
   <div id="badges">
     <a href="https://vk.com/vgartg" target="_blank">
@@ -37,10 +37,10 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
 
 ---
 
-### 💻 Technologies:
+ <!-- ### 💻 Technologies:
 
 <div>
- <!-- <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="git" alt="git" width="40" height="40"/>&nbsp
+ <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="git" alt="git" width="40" height="40"/>&nbsp
   <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="html5" alt="html5" width="40" height="40"/>&nbsp
   <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-original.svg" title="css" alt="css" width="40" height="40"/>&nbsp
   <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="javascript" alt="javascript" width="40" height="40"/>&nbsp
@@ -51,8 +51,8 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
   <img src="https://github.com/devicons/devicon/blob/master/icons/c/c-plain.svg" title="C" alt="C" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/sass/sass-original.svg" title="sass/scss" alt="sass/scss" width="40" height="40"/>&nbsp;
   <img src="https://github.com/devicons/devicon/blob/master/icons/webpack/webpack-original.svg" title="webpack" alt="webpack" width="40" height="40"/>&nbsp;
-   <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="redux" alt="redux" width="40" height="40"/>&nbsp; -->
-</div>
+   <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="redux" alt="redux" width="40" height="40"/>&nbsp; 
+</div> -->
 
 ---
 
@@ -64,7 +64,7 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
       <img align="left" src="http://github-readme-streak-stats.herokuapp.com?user=vgartg&theme=dark&background=000000" alt="webDev's Github stats" />
     </td>
     <td>
-      <img height="195px" align="right" alt="webDev's Github Languages" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vgartg&layout=compact&theme=vision-friendly-dark" />
+      <img height="195px" align="right" alt="webDev's Github Languages" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vgartg&layout=compact&theme=vision-friendly-dark"/>
     </td>
   </tr>
 </table>
