@@ -4,7 +4,7 @@
 
 ### 👨🏻‍💻 About me:
 
-I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">! My path began with independent study of such languages as Pascal, Python, Java and C#. Later, I began to consolidate the acquired knowledge when entering the university. Now I am studying the fundamental computer science, I have an incomplete higher education in one of the main universities in my region:shipit:! I became interested in web development quite recently, started taking courses on front-end development on Yandex Practicum, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field.
+I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">! My path began with independent study of such languages as Pascal, Python, Java, C# and C++. Later, I began to consolidate the acquired knowledge when entering the university. Now I am studying the fundamental computer science, I have an incomplete higher education in one of the main universities in my region:shipit:! I became interested in web development quite recently, started taking courses on front-end development on Yandex Practicum, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field.
 
 <!-- <p align="center">
  <img width="600" src="assets/github-snake.svg" alt="snake"/>
@@ -46,12 +46,11 @@ I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCE
 
 <div align="center">  
 <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#" height="50" /></a>
+<a href="https://cplusplus.com/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++" height="50" /></a>
 <a href="https://www.java.com/ru/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="JavaScript" height="50" /></a>
 <a href="https://html.com/html5/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML" height="50" /></a>
 <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" height="50" /></a>
-<a href="https://www.python.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/python-original.svg" alt="Python" height="50" /></a>
-<a href="https://github.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/git-scm-icon.svg" alt="Git" height="50" /></a>
-<a href="https://www.mysql.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/mysql-original-wordmark.svg" alt="MySQL" height="50" /></a>
+<a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_official_icon_130107.png" alt="TypeScript" height="50" /></a>
 </div> 
 
 ---
