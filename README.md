@@ -4,13 +4,13 @@
 
 ### 👨🏻‍💻 About me:
 
-I am a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">! My path began with independent study of such languages as Pascal, Python, Java, C# and C++. Later, I began to consolidate the acquired knowledge when entering the university. Now I am studying the fundamental computer science, I have an incomplete higher education in one of the main universities in my region:shipit:! I became interested in web development quite recently, started taking courses on front-end development on Yandex Practicum, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field.
+I'm a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">! My path began with independent study of such languages as Pascal, Python, Java, C# and C++. Later, I began to consolidate the acquired knowledge when entering the university. Now I'm studying the fundamental computer science, I have an incomplete higher education in one of the main universities in my region:shipit:! I became interested in web development quite recently, started taking courses on front-end development on Yandex Practicum, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field.
 
 <!-- <p align="center">
  <img width="600" src="assets/github-snake.svg" alt="snake"/>
 </p> -->
 
-- :two_men_holding_hands: I am an open person, I have something to discuss!
+- :two_men_holding_hands: I'm an open person, I have something to discuss!
 
 - :blue_book: I study a lot of material!
 
