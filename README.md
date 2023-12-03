@@ -16,7 +16,7 @@ I'm a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEm
 
 - :running: Strive for my goal!
 
-- :thought_balloon: How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
+- 💭 How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
 
 ---
 
