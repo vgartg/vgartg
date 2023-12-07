@@ -2,42 +2,27 @@
 
 ---
 
-### 👨🏻‍💻 About me:
+### <img src="https://i.pinimg.com/originals/c3/0e/4e/c30e4e41dee5d6c7c5857f4b295c74d2.gif" width="60px" heigth="60px"/>About me:
 
-I'm a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30px">! My path began with independent study of such languages as Pascal, Python, Java, C# and C++. Later, I began to consolidate the acquired knowledge when entering the university. Now I'm studying the fundamental computer science, I have an incomplete higher education in one of the main universities in my region:shipit:! I became interested in web development quite recently, started taking courses on front-end development on Yandex Practicum, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field.
+I'm a beginner web developer!<img src="https://i.pinimg.com/originals/91/ff/a5/91ffa51e884db73a825f5b6def20098f.gif" height="20px" width="20px"> My path began with independent study of such languages as Pascal, Python, Java, C# and C++. Later, I began to consolidate the acquired knowledge when entering the university. Now I'm studying the fundamental computer science, I have an incomplete higher education in one of the main universities in my region! I became interested in web development quite recently, started taking courses on front-end development on Yandex Practicum, which gave me a big boost! Now I'm trying to get as far as possible into web development and become a real specialist in this field<img src="https://i.pinimg.com/originals/b2/d8/80/b2d880ccf382f298a6939c7eb0ab36bd.gif" height="20px" width="20px">
 
-<!-- <p align="center">
- <img width="600" src="assets/github-snake.svg" alt="snake"/>
-</p> -->
+ 💭 How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
 
-- :two_men_holding_hands: I'm an open person, I have something to discuss!
-
-- :blue_book: I study a lot of material!
-
-- :running: Strive for my goal!
-
-- 💭 How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
+<div align="center">
+  <img height="200" src="https://i.pinimg.com/originals/7f/2c/50/7f2c5092eb778b3423f634055ffea540.gif"/>
+</div>
 
 ---
 
-### 🤝🏻 Social media:
+
+### <img src="https://64.media.tumblr.com/d3466a4a1b8568906705908173a1b6ed/tumblr_n80jjtdJ5o1s3bc1no1_500.gif" width="60px" heigth="60px"/>Social media:
 
   <div id="badges" align="center">
-    <a href="https://vk.com/vgartg" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" width="50" height="50" alt="VK Badge"/>
-    </a>
-    <a href="https://instagram.com/vgartg" target="_blank">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" width="50" height="50" alt="Instagram Badge"/>
-    </a>
-   <a href="mailto:gopik539@mail.com" terget="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/2611/2611659.png" width="50" height="50" alt="Mail Badge"/>
-   </a>
-   <a href="https://lichess.org/@/GROSSMEISTEER" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/1253/1253677.png" width="50" height="50" alt="Chess Badge"/>
-   </a>
-   <a href="https://steamcommunity.com/id/vgartg" target="_blank">
-    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670233.png" width="50" height="50" alt="Steam Badge"/>
-   </a>
+    <a href="https://vk.com/vgartg" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" height="50" alt="VK Badge" /></a>
+    <a href="https://instagram.com/vgartg" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" height="50" alt="Instagram Badge"/></a>
+   <a href="mailto:gopik539@mail.com" terget="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2611/2611659.png" height="50" alt="Mail Badge"/></a>
+   <a href="https://lichess.org/@/GROSSMEISTEER" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1253/1253677.png" height="50" alt="Chess Badge"/></a>
+   <a href="https://steamcommunity.com/id/vgartg" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670233.png" height="50" alt="Steam Badge"/></a>
 </div>
 
  ---
@@ -68,4 +53,4 @@ I'm a beginner web developer<img src="https://media.giphy.com/media/WUlplcMpOCEm
   </tr>
 </table>
 
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=vgartg)
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=vgartg&left_text=visitors&left_color=black&right_color=red)
