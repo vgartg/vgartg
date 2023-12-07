@@ -27,7 +27,7 @@ I'm a beginner web developer!<img src="https://i.pinimg.com/originals/91/ff/a5/9
 
  ---
  
- ### 💻 Technologies:
+ ### <img src="https://64.media.tumblr.com/617443b8b8fe28581fdbdfeb1e3dee87/tumblr_nujbnyVriX1s3bc1no2_250.gif" width="60px" heigth="60px"/>Technologies:
 
 <div align="center">  
 <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#" height="50" /></a>
@@ -40,7 +40,7 @@ I'm a beginner web developer!<img src="https://i.pinimg.com/originals/91/ff/a5/9
 
 ---
 
-### ⚙️ GitHub statistics:
+### <img src="https://64.media.tumblr.com/d9bdc9e175e4c20fdf95a6230abc9d9e/tumblr_nujnds9iBl1s3bc1no1_400.gif" width="60px" heigth="60px"/>GitHub statistics:
 
 <table>
   <tr>
