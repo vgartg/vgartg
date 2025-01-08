@@ -42,16 +42,9 @@
 
 ## <img src="https://64.media.tumblr.com/d9bdc9e175e4c20fdf95a6230abc9d9e/tumblr_nujnds9iBl1s3bc1no1_400.gif" width="60px" heigth="60px"/>GitHub statistics:
 
-<table>
-  <tr>
-    <td>
-      <img align="left" src="http://github-readme-streak-stats.herokuapp.com?user=vgartg&theme=dark&background=000000" alt="webDev's Github stats" />
-    </td>
-    <td>
-      <img height="195px" align="right" alt="webDev's Github Languages" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vgartg&layout=compact&theme=vision-friendly-dark"/>
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img height="195px" alt="webDev's Github Languages" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vgartg&layout=compact&theme=vision-friendly-dark"/>
+</div>
 
 <div align="center">
   <img src="https://media.tenor.com/8HaTOA3o0OoAAAAi/pixel-cat.gif" width="240px" heigth="240px"/>
