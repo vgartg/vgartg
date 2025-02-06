@@ -15,9 +15,9 @@
 
 <div id="badges" align="center">
   <a href="https://vk.com/vgartg" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" height="50" alt="VK" /></a>
-  <a href="https://instagram.com/vgartg" target="_blank"><img src="https://cdn.icon-icons.com/icons2/1211/PNG/512/1491580635-yumminkysocialmedia26_83102.png" height="50" alt="Instagram"/></a>
-  <a href="mailto:gopik539@mail.com" terget="_blank"><img src="https://cdn.icon-icons.com/icons2/1195/PNG/512/1490889681-email_82528.png" height="50" alt="Email"/></a>
-  <a href="https://lichess.org/@/GROSSMEISTEER" target="_blank"><img src="https://cdn.icon-icons.com/icons2/233/PNG/512/Chess_26226.png" height="50" alt="Chess"/></a>
+  <a href="https://instagram.com/vgartg" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png" height="50" alt="Instagram"/></a>
+  <a href="mailto:gopik539@mail.com" terget="_blank"><img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/message-circle-blue-512.png" height="50" alt="Email"/></a>
+  <a href="https://lichess.org/@/GROSSMEISTEER" target="_blank"><img src="https://cdn3.iconfinder.com/data/icons/seo-marketing-flat-circle-shadow-3/512/Chess_marketing_planning_strategy-512.png" height="50" alt="Chess"/></a>
   <a href="https://steamcommunity.com/id/vgartg" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3670/3670233.png" height="50" alt="Steam"/></a>
 </div>
 
@@ -28,14 +28,14 @@
 <div align="center">  
 <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/csharp-original.svg" alt="C#" height="50" /></a>
 <a href="https://cplusplus.com/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++" height="50" /></a>
-<a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_official_icon_130107.png" alt="TypeScript" height="50" /></a>
+<a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="TypeScript" height="50" /></a>
 <a href="https://www.java.com/ru/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="JavaScript" height="50" /></a>
-<a href="https://www.ruby-lang.org/ru/" target="_blank"><img style="margin: 10px" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_ruby_icon_130186.png" alt="Ruby" height="50" /></a>
-<a href="https://rubyonrails.org/" target="_blank"><img style="margin: 10px" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/rails_plain_logo_icon_146376.png" alt="Rails" height="50" /></a>
+<a href="https://www.ruby-lang.org/ru/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/6132/6132219.png" alt="Ruby" height="50" /></a>
+<a href="https://rubyonrails.org/" target="_blank"><img style="margin: 10px" src="https://w7.pngwing.com/pngs/782/228/png-transparent-ruby-on-rails-rubygems-amazon-dynamodb-ruby-text-logo-ruby-thumbnail.png" alt="Rails" height="50" /></a>
 <a href="https://html.com/html5/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML" height="50" /></a>
 <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" height="50" /></a>
 <a href="https://ru.legacy.reactjs.org/" target="_blank"><img style="margin: 10px" src="https://cdn.icon-icons.com/icons2/2415/PNG/512/react_original_logo_icon_146374.png" alt="React" height="50" /></a>
-<a href="https://tailwindcss.com/" target="_blank"><img style="margin: 10px" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_tailwind_icon_130128.png" alt="Tailwind" height="50" /></a>
+<a href="https://tailwindcss.com/" target="_blank"><img style="margin: 10px" src="https://img.icons8.com/?size=100&id=x7XMNGh2vdqA&format=png&color=000000" alt="Tailwind" height="50" /></a>
 </div> 
 
 ---
