@@ -31,7 +31,7 @@
 <a href="https://www.typescriptlang.org/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/5968/5968381.png" alt="TypeScript" height="50" /></a>
 <a href="https://www.java.com/ru/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="JavaScript" height="50" /></a>
 <a href="https://www.ruby-lang.org/ru/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/6132/6132219.png" alt="Ruby" height="50" /></a>
-<a href="https://rubyonrails.org/" target="_blank"><img style="margin: 10px" src="https://w7.pngwing.com/pngs/782/228/png-transparent-ruby-on-rails-rubygems-amazon-dynamodb-ruby-text-logo-ruby-thumbnail.png" alt="Rails" height="50" /></a>
+<a href="https://rubyonrails.org/" target="_blank"><img style="margin: 10px" src="https://groggyman.com/wp-content/uploads/2018/02/ruby-on-rails-logo.png" alt="Rails" height="50" /></a>
 <a href="https://html.com/html5/" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/174/174854.png" alt="HTML" height="50" /></a>
 <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"><img style="margin: 10px" src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS" height="50" /></a>
 <a href="https://ru.legacy.reactjs.org/" target="_blank"><img style="margin: 10px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/800px-React_Logo_SVG.svg.png" alt="React" height="50" /></a>
