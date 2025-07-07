@@ -40,12 +40,6 @@
 
 ---
 
-## <img src="https://64.media.tumblr.com/d9bdc9e175e4c20fdf95a6230abc9d9e/tumblr_nujnds9iBl1s3bc1no1_400.gif" width="40" height="40"/> GitHub statistics:
-
-<div align="center">
-  <img height="195" alt="webDev's Github Languages" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=vgartg&layout=compact&theme=vision-friendly-dark"/>
-</div>
-
 <div align="center">
   <img src="https://media.tenor.com/8HaTOA3o0OoAAAAi/pixel-cat.gif" width="240" height="240"/>
 </div>
