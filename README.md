@@ -1,7 +1,5 @@
 ---
 
-# <img src="http://2.bp.blogspot.com/-6l_paC5jSAA/UUXd-ZujCPI/AAAAAAAAC2I/74BZTvZkKds/s1600/perro.gif" width="1000" height="400"/>
-
 ### 💭 How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
 
 <div align="center">
@@ -39,9 +37,5 @@
 </div>
 
 ---
-
-<div align="center">
-  <img src="https://media.tenor.com/8HaTOA3o0OoAAAAi/pixel-cat.gif" width="240" height="240"/>
-</div>
 
 ![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=vgartg&left_text=visitors&left_color=black&right_color=red)
