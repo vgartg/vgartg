@@ -1,5 +1,3 @@
----
-
 ### 💭 How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
 
 <div align="center">
