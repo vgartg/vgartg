@@ -9,6 +9,12 @@
 ## <img src="https://64.media.tumblr.com/d3466a4a1b8568906705908173a1b6ed/tumblr_n80jjtdJ5o1s3bc1no1_500.gif" width="40" height="40"/> Social media:
 
 <div align="center">
+  <a href="https://vgartg.ru" target="_blank">
+    <img src="https://img.icons8.com/fluency/96/000000/domain.png" width="60" height="60" alt="Portfolio"/>
+  </a>
+</div>
+
+<div align="center">
   <a href="https://vk.com/vgartg" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145813.png" width="50" height="50" alt="VK"/></a>
   <a href="https://instagram.com/vgartg" target="_blank"><img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-512.png" width="50" height="50" alt="Instagram"/></a>
   <a href="mailto:gopik539@mail.com" target="_blank"><img src="https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes/128/message-circle-blue-512.png" width="50" height="50" alt="Email"/></a>
