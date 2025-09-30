@@ -812,4 +812,12 @@ footer {
         padding: 0.4rem 0.8rem;
         font-size: 0.8rem;
     }
+
+    .footer-links {
+        display: none !important;
+    }
+
+    .hero {
+        margin-top: 5rem;
+    }
 }
