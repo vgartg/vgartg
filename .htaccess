@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    <FilesMatch "\.(html)$">
+        Header set Cache-Control "no-cache, must-revalidate"
+    </FilesMatch>
+
+    <FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg)$">
+        Header set Cache-Control "public, max-age=86400, must-revalidate"
+    </FilesMatch>
+    
+    RewriteEngine On
+</IfModule>
