@@ -1,0 +1,71 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "title": "Fullstack Developer",
+    "name": "Valery",
+    "typing_first": "Creating",
+    "typing_second": "with",
+    "typing_between": "digital-products",
+    "description": "Turning complex ideas into elegant and functional solutions. Over 2 years of experience in web development.",
+    "projects": "My Projects",
+    "contact": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Fullstack Developer from Rostov-on-Don",
+    "text1": "I've been doing web development since 2023. I specialize in creating full-fledged web applications using modern technologies.",
+    "text2": "My approach combines attention to detail, commitment to creating clean and maintainable code, and understanding of business needs.",
+    "text3": "Currently, I'm also developing my own project Jammer - a platform for independent game developers."
+  },
+  "projects": {
+    "title": "My Projects",
+    "jammer": {
+      "title": "Jammer",
+      "description": "Platform for independent game developers, similar to itch.io. Full-featured marketplace with game upload, sales, and review systems."
+    },
+    "purmarili": {
+      "title": "Purmarili",
+      "description": "Web application for a restaurant chain in Rostov-on-Don. Includes custom admin panel for content management."
+    },
+    "elina": {
+      "title": "GK \"Elina\"",
+      "description": "Web application for real estate sales in Rostov region and new republics. Filtering system, maps, administrative panel."
+    },
+    "inDevelopment": "In Development",
+    "prototype": "Prototype",
+    "product": "Product"
+  },
+  "experience": {
+    "title": "Work Experience",
+    "trucker": {
+      "title": "Backend Developer",
+      "company": "Trucker",
+      "description": "Working on client configurations in Customer Technologies Team. Development and maintenance of backend part of projects.",
+      "technologies": "Technologies"
+    },
+    "jammer": {
+      "title": "Fullstack Developer & Co-founder",
+      "company": "Jammer",
+      "description": "Technical lead and one of the project founders. Developing a platform for independent game developers from scratch."
+    },
+    "viomitra": {
+      "title": "Frontend Developer",
+      "company": "VioMitra",
+      "description": "Development of online auction service. Mentoring interns, participation in microservices development."
+    }
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Always open to new opportunities and interesting projects. Contact me and we'll discuss how I can help bring your ideas to life."
+  },
+  "footer": {
+    "copyright": "&copy; 2025 vgartg. All rights reserved."
+  }
+}

@@ -1,15 +1,86 @@
+let currentLanguage = 'ru';
+let translations = {};
+
+async function loadTranslations(lang) {
+    try {
+        const response = await fetch(`locales/${lang}.json`);
+        translations[lang] = await response.json();
+        return translations[lang];
+    } catch (error) {
+        console.error(`Error loading ${lang} translations:`, error);
+        return {};
+    }
+}
+
+function updateContent(lang) {
+    document.documentElement.lang = lang;
+    
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        const translation = getTranslation(translations[lang], key);
+        
+        if (translation) {
+            if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                element.placeholder = translation;
+            } else if (element.hasAttribute('data-i18n-html')) {
+                element.innerHTML = translation;
+            } else {
+                element.textContent = translation;
+            }
+        }
+    });
+    
+    localStorage.setItem('preferred-language', lang);
+    currentLanguage = lang;
+    
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        if (btn.getAttribute('data-lang') === lang) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+function getTranslation(obj, key) {
+    return key.split('.').reduce((o, k) => o && o[k], obj);
+}
+
+function initLanguageSwitcher() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    
+    langButtons.forEach(btn => {
+        btn.addEventListener('click', async () => {
+            const newLang = btn.getAttribute('data-lang');
+            if (newLang !== currentLanguage) {
+                if (!translations[newLang]) {
+                    await loadTranslations(newLang);
+                }
+                updateContent(newLang);
+            }
+        });
+    });
+}
+
 function loadComponents() {
     fetch('components/header.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
             initNavigation();
+            initLanguageSwitcher();
+        })
+        .catch(error => {
+            console.error('Error loading header:', error);
         });
 
     fetch('components/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error loading footer:', error);
         });
 }
 
@@ -111,6 +182,7 @@ function initTypingAnimation() {
         setInterval(typeTech, 2000);
     }
 }
+
 function initNavbarScroll() {
     window.addEventListener('scroll', () => {
         const navbar = document.querySelector('.navbar');
@@ -126,9 +198,24 @@ function initNavbarScroll() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', async function() {
+    const savedLanguage = localStorage.getItem('preferred-language') || 'ru';
+    
+    await loadTranslations(savedLanguage);
+    
     loadComponents();
     initScrollAnimations();
     initTypingAnimation();
     initNavbarScroll();
+    
+    updateContent(savedLanguage);
 });
+
+window.addEventListener('error', function(e) {
+    console.error('Error loading resource:', e);
+});
+
+function reinitAnimations() {
+    initScrollAnimations();
+    initTypingAnimation();
+}
