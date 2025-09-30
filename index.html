@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vgartg - Fullstack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" href="/assets/icons/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1 class="fade-in">Привет, я <span class="gradient-text">Валерий</span><br>Fullstack разработчик</h1>
+                <div class="typing-text fade-in delay-1">
+                    Создаю <span class="static-text">digital-продукты</span> с помощью <span class="changing-tech"></span>
+                </div>
+                <p class="fade-in delay-2">Превращаю сложные идеи в элегантные и функциональные решения. Более 2 лет опыта в веб-разработке.</p>
+                <div class="btn-container fade-in delay-3">
+                    <a href="#projects" class="btn">Мои проекты</a>
+                    <a href="#contact" class="btn btn-secondary">Связаться со мной</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="section-title">Обо мне</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Fullstack разработчик из Ростова-на-Дону</h3>
+                    <p>Занимаюсь веб-разработкой с 2023 года. Специализируюсь на создании полноценных веб-приложений с использованием современных технологий.</p>
+                    <p>Мой подход сочетает в себе внимание к деталям, стремление к созданию чистого и поддерживаемого кода, а также понимание бизнес-потребностей.</p>
+                    <p>В настоящее время я также развиваю собственный проект Jammer - платформу для независимых разработчиков игр.</p>
+                    
+                    <div class="skills">
+                        <div class="skill-tag">Ruby-on-Rails</div>
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">TypeScript</div>
+                        <div class="skill-tag">React</div>
+                        <div class="skill-tag">PostgreSQL</div>
+                        <div class="skill-tag">Redis</div>
+                        <div class="skill-tag">Sidekiq</div>
+                        <div class="skill-tag">TailwindCSS</div>
+                        <div class="skill-tag">ASP.NET</div>
+                        <div class="skill-tag">Git</div>
+                    </div>
+                </div>
+                <div class="about-image iam_img_block">
+                    <div class="placeholder-image">
+                        <img class="iam_img" src="assets/images/iam.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <h2 class="section-title">Мои проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-img">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Jammer</h3>
+                        <p class="project-description">Платформа для независимых разработчиков игр, аналог itch.io. Полнофункциональный маркетплейс с системой загрузки, продажи и рецензирования игр.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Ruby</span>
+                            <span class="tech-tag">Ruby-on-Rails</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://jammer.website" class="project-link"><i class="fas fa-external-link-alt"></i> Прототип</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in delay-1">
+                    <div class="project-img">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Пурмарили</h3>
+                        <p class="project-description">Веб-приложение для сети ресторанов в Ростове-на-Дону. Включает кастомную административную панель для управления контентом.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a target="_blank" href="https://purmarili-rnd.ru/" class="project-link"><i class="fas fa-external-link-alt"></i> Продукт</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in delay-2">
+                    <div class="project-img">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">ГК "Элина"</h3>
+                        <p class="project-description">Веб-приложение для продажи недвижимости в Ростовской области и новых республиках. Система фильтрации, карты, административная панель.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Java</span>
+                        </div>
+                        <div class="project-links">
+                            <p class="project-description" style="color:rgb(173, 96, 96)">В разработке</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <h2 class="section-title">Опыт работы</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-date">Now</div>
+                    <div class="timeline-content">
+                        <h3>Backend Developer</h3>
+                        <div class="company">Trucker</div>
+                        <p>Работа над клиентскими конфигурациями в команде Customer Technologies Team. Разработка и поддержка backend-части проектов.</p>
+                        <p><strong>Технологии:</strong> Ruby, Ruby-on-Rails, PostgreSQL, Redis, Sidekiq</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in delay-1">
+                    <div class="timeline-date">Now</div>
+                    <div class="timeline-content">
+                        <h3>Fullstack Developer & Co-founder</h3>
+                        <div class="company">Jammer</div>
+                        <p>Технический лидер и один из основателей проекта. Разработка платформы для независимых разработчиков игр с нуля.</p>
+                        <p><strong>Технологии:</strong> Ruby, Ruby-on-Rails, JavaScript, PostgreSQL, TailwindCSS</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item fade-in delay-2">
+                    <div class="timeline-date">2024</div>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer</h3>
+                        <div class="company">VioMitra</div>
+                        <p>Разработка сервиса онлайн-аукционов. Руководство стажерами, участие в разработке микросервисов.</p>
+                        <p><strong>Технологии:</strong> JavaScript, TypeScript, React, ASP.NET, Bootstrap</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <h2 class="section-title">Свяжитесь со мной</h2>
+            <div class="contact-content">
+                <p>Всегда открыт к новым возможностям и интересным проектам. Свяжитесь со мной, и мы обсудим, как я могу помочь в реализации ваших идей.</p>
+                <div class="contact-links">
+                    <a href="mailto:vgorbanev@sfedu.ru" class="contact-link">
+                        <i class="fas fa-envelope"></i>
+                        <span>vgorbanev@sfedu.ru</span>
+                    </a>
+                    <a href="tel:+79897107783" class="contact-link">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 989 710-77-83</span>
+                    </a>
+                    <a href="https://github.com/vgartg" class="contact-link">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://t.me/vgartg" class="contact-link">
+                        <i class="fab fa-telegram"></i>
+                        <span>Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
