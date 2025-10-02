@@ -836,7 +836,6 @@ footer {
     justify-content: center;
 }
 
-/* === Experience Section Styles === */
 .experience-timeline {
     max-width: 800px;
     margin: 0 auto;
@@ -931,7 +930,6 @@ footer {
     font-style: italic;
 }
 
-/* === Mobile Responsiveness === */
 @media (max-width: 768px) {
     .experience-header {
         flex-direction: column;
@@ -952,7 +950,23 @@ footer {
     }
 }
 
-/* === Existing Animation Styles === */
 .delay-4 {
     animation-delay: 0.8s;
+}
+
+.fade-in {
+    opacity: 0;
+}
+
+.project-card,
+.experience-item,
+.skill-tag,
+.about-content,
+.contact-content {
+    opacity: 1;
+}
+
+.hero .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
 }

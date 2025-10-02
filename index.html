@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="/assets/icons/logo.png" type="image/x-icon">
 </head>
@@ -47,6 +49,7 @@
                         <div class="skill-tag">TypeScript</div>
                         <div class="skill-tag">React</div>
                         <div class="skill-tag">PostgreSQL</div>
+                        <div class="skill-tag">MySQL</div>
                         <div class="skill-tag">Redis</div>
                         <div class="skill-tag">Sidekiq</div>
                         <div class="skill-tag">ASP.NET</div>
@@ -67,7 +70,7 @@
         <section class="projects" id="projects">
             <h2 class="section-title" data-i18n="projects.title">Мои проекты</h2>
             <div class="projects-grid">
-                <div class="project-card fade-in">
+                <div class="project-card">
                     <div class="project-img">
                         <img class="prg_img" src="/assets/images/jammer.png">
                     </div>
@@ -84,7 +87,7 @@
                     </div>
                 </div>
                 
-                <div class="project-card fade-in delay-1">
+                <div class="project-card">
                     <div class="project-img">
                         <img class="prg_img" src="/assets/images/trucker.png">
                     </div>
@@ -102,7 +105,7 @@
                     </div>
                 </div>
                 
-                <div class="project-card fade-in delay-2">
+                <div class="project-card">
                     <div class="project-img">
                         <img class="prg_img" src="/assets/images/viomitra.png">
                     </div>
@@ -122,7 +125,7 @@
             </div>
 
             <div class="projects-grid projects-grid-two-inline projects-grid-second-line">
-                <div class="project-card fade-in delay-1">
+                <div class="project-card">
                     <div class="project-img">
                         <img class="prg_img" src="/assets/images/purmarili.png">
                     </div>
@@ -137,7 +140,7 @@
                     </div>
                 </div>
                 
-                <div class="project-card fade-in delay-2">
+                <div class="project-card">
                     <div class="project-img">
                         <img class="prg_img" src="/assets/images/gk_elina.png">
                     </div>
@@ -157,65 +160,65 @@
         <section class="experience" id="experience">
             <h2 class="section-title" data-i18n="experience.title">Опыт работы</h2>
             <div class="experience-timeline">
-                <div class="experience-item fade-in">
+                <div class="experience-item">
                     <div class="experience-card">
                         <div class="experience-header">
                             <h3 class="experience-role" data-i18n="experience.trucker.title">Backend Developer</h3>
                             <div class="experience-date">
                                 <span class="date-range" data-i18n="experience.dateRanges.trucker">Декабрь 2024 — настоящее время</span>
-                                <span class="duration-badge" data-i18n="experience.durations.trucker">11 месяцев</span>
+                                <span class="duration-badge" data-i18n="experience.durations.trucker"></span>
                             </div>
                         </div>
                         <div class="experience-company" data-i18n="experience.trucker.company">Trucker</div>
                     </div>
                 </div>
 
-                <div class="experience-item fade-in delay-1">
+                <div class="experience-item">
                     <div class="experience-card">
                         <div class="experience-header">
                             <h3 class="experience-role" data-i18n="experience.jammer.title">Fullstack Developer & Co-founder</h3>
                             <div class="experience-date">
                                 <span class="date-range" data-i18n="experience.dateRanges.jammer">Июль 2024 — настоящее время</span>
-                                <span class="duration-badge" data-i18n="experience.durations.jammer">1 год 4 месяца</span>
+                                <span class="duration-badge" data-i18n="experience.durations.jammer"></span>
                             </div>
                         </div>
                         <div class="experience-company" data-i18n="experience.jammer.company">Jammer</div>
                     </div>
                 </div>
 
-                <div class="experience-item fade-in delay-2">
+                <div class="experience-item">
                     <div class="experience-card">
                         <div class="experience-header">
                             <h3 class="experience-role" data-i18n="experience.elina.title">Fullstack Developer</h3>
                             <div class="experience-date">
                                 <span class="date-range" data-i18n="experience.dateRanges.elina">Август 2025 — настоящее время</span>
-                                <span class="duration-badge" data-i18n="experience.durations.elina">Продолжаю работу</span>
+                                <span class="duration-badge" data-i18n="experience.durations.elina"></span>
                             </div>
                         </div>
                         <div class="experience-company" data-i18n="experience.elina.company">ГК "Элина"</div>
                     </div>
                 </div>
 
-                <div class="experience-item fade-in delay-3">
+                <div class="experience-item">
                     <div class="experience-card">
                         <div class="experience-header">
                             <h3 class="experience-role" data-i18n="experience.purmarili.title">Fullstack Developer</h3>
                             <div class="experience-date">
-                                <span class="date-range" data-i18n="experience.dateRanges.purmarili">Май 2024 — настоящее время</span>
-                                <span class="duration-badge" data-i18n="experience.durations.purmarili">1 год 1 месяц</span>
+                                <span class="date-range" data-i18n="experience.dateRanges.purmarili">Май 2024 — Сентябрь 2024</span>
+                                <span class="duration-badge" data-i18n="experience.durations.purmarili"></span>
                             </div>
                         </div>
                         <div class="experience-company" data-i18n="experience.purmarili.company">Пурмарили</div>
                     </div>
                 </div>
 
-                <div class="experience-item fade-in delay-4">
+                <div class="experience-item">
                     <div class="experience-card">
                         <div class="experience-header">
                             <h3 class="experience-role" data-i18n="experience.viomitra.title">Frontend Developer</h3>
                             <div class="experience-date">
                                 <span class="date-range" data-i18n="experience.dateRanges.viomitra">Июль 2023 — Декабрь 2024</span>
-                                <span class="duration-badge" data-i18n="experience.durations.viomitra">1 год 6 месяцев</span>
+                                <span class="duration-badge" data-i18n="experience.durations.viomitra"></span>
                             </div>
                         </div>
                         <div class="experience-company" data-i18n="experience.viomitra.company">VioMitra</div>

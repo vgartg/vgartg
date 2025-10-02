@@ -33,6 +33,9 @@ function updateContent(lang) {
     localStorage.setItem('preferred-language', lang);
     currentLanguage = lang;
     
+    updateExperienceDurations();
+    updateDateRanges();
+    
     document.querySelectorAll('.lang-btn').forEach(btn => {
         if (btn.getAttribute('data-lang') === lang) {
             btn.classList.add('active');
@@ -142,6 +145,130 @@ function initNavigation() {
     });
 }
 
+function calculateMonthDifference(startDate, endDate = new Date()) {
+    const start = new Date(startDate);
+    const end = endDate === 'present' ? new Date() : new Date(endDate);
+    
+    const yearsDifference = end.getFullYear() - start.getFullYear();
+    const monthsDifference = end.getMonth() - start.getMonth();
+    
+    return yearsDifference * 12 + monthsDifference;
+}
+
+function formatDurationRu(months) {
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+    
+    if (years === 0) {
+        return `${months} ${getRussianMonths(months)}`;
+    } else if (remainingMonths === 0) {
+        return `${years} ${getRussianYears(years)}`;
+    } else {
+        return `${years} ${getRussianYears(years)} ${remainingMonths} ${getRussianMonths(remainingMonths)}`;
+    }
+}
+
+function formatDurationEn(months) {
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+    
+    if (years === 0) {
+        return `${months} ${months === 1 ? 'month' : 'months'}`;
+    } else if (remainingMonths === 0) {
+        return `${years} ${years === 1 ? 'year' : 'years'}`;
+    } else {
+        return `${years} ${years === 1 ? 'year' : 'years'} ${remainingMonths} ${remainingMonths === 1 ? 'month' : 'months'}`;
+    }
+}
+
+function getRussianYears(years) {
+    if (years === 1) return 'год';
+    if (years >= 2 && years <= 4) return 'года';
+    return 'лет';
+}
+
+function getRussianMonths(months) {
+    if (months === 1) return 'месяц';
+    if (months >= 2 && months <= 4) return 'месяца';
+    return 'месяцев';
+}
+
+function updateExperienceDurations() {
+    const experienceData = [
+        {
+            key: 'trucker',
+            startDate: '2024-12-01',
+            endDate: 'present'
+        },
+        {
+            key: 'jammer',
+            startDate: '2024-07-01',
+            endDate: 'present'
+        },
+        {
+            key: 'elina',
+            startDate: '2025-08-01',
+            endDate: 'present'
+        },
+        {
+            key: 'purmarili',
+            startDate: '2024-05-01',
+            endDate: '2024-09-01'
+        },
+        {
+            key: 'viomitra',
+            startDate: '2023-07-01',
+            endDate: '2024-12-01'
+        }
+    ];
+
+    experienceData.forEach(exp => {
+        const months = calculateMonthDifference(exp.startDate, exp.endDate);
+        const duration = currentLanguage === 'ru' ? formatDurationRu(months) : formatDurationEn(months);
+        
+        const durationElement = document.querySelector(`[data-i18n="experience.durations.${exp.key}"]`);
+        if (durationElement) {
+            durationElement.textContent = duration;
+        }
+        
+        if (translations.ru && translations.ru.experience && translations.ru.experience.durations) {
+            translations.ru.experience.durations[exp.key] = formatDurationRu(months);
+        }
+        if (translations.en && translations.en.experience && translations.en.experience.durations) {
+            translations.en.experience.durations[exp.key] = formatDurationEn(months);
+        }
+    });
+}
+
+function updateDateRanges() {
+    const dateRanges = {
+        'trucker': { start: 'Декабрь 2024', end: 'настоящее время' },
+        'jammer': { start: 'Июль 2024', end: 'настоящее время' },
+        'elina': { start: 'Август 2025', end: 'настоящее время' },
+        'purmarili': { start: 'Май 2024', end: 'Сентябрь 2024' },
+        'viomitra': { start: 'Июль 2023', end: 'Декабрь 2024' }
+    };
+
+    Object.keys(dateRanges).forEach(key => {
+        const range = dateRanges[key];
+        const rangeText = currentLanguage === 'ru' 
+            ? `${range.start} — ${range.end}`
+            : `${range.start} — ${range.end === 'настоящее время' ? 'Present' : range.end}`;
+        
+        const rangeElement = document.querySelector(`[data-i18n="experience.dateRanges.${key}"]`);
+        if (rangeElement) {
+            rangeElement.textContent = rangeText;
+        }
+        
+        if (translations.ru && translations.ru.experience && translations.ru.experience.dateRanges) {
+            translations.ru.experience.dateRanges[key] = `${range.start} — ${range.end}`;
+        }
+        if (translations.en && translations.en.experience && translations.en.experience.dateRanges) {
+            translations.en.experience.dateRanges[key] = `${range.start} — ${range.end === 'настоящее время' ? 'Present' : range.end}`;
+        }
+    });
+}
+
 function initScrollAnimations() {
     const fadeElements = document.querySelectorAll('.fade-in');
     
@@ -167,7 +294,7 @@ function initScrollAnimations() {
 }
 
 function initTypingAnimation() {
-    const techStack = ['Ruby-on-Rails', 'JavaScript', 'TypeScript', 'React', 'PostgreSQL', 'Redis', 'TailwindCSS'];
+    const techStack = ['Ruby', 'Ruby-on-Rails', 'JavaScript', 'TypeScript', 'React', 'ASP.NET'];
     let currentTechIndex = 0;
     const typingElement = document.querySelector('.changing-tech');
     
@@ -198,17 +325,130 @@ function initNavbarScroll() {
     });
 }
 
+function initGSAPScrollAnimations() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.fromTo('.hero .fade-in', 
+        {
+            y: 50,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            stagger: 0.2,
+            delay: 0.3
+        }
+    );
+
+    gsap.fromTo('.about-content', 
+        {
+            y: 80,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: '.about',
+                start: 'top 80%',
+                end: 'bottom 40%',
+                toggleActions: 'play none none reverse'
+            }
+        }
+    );
+
+    gsap.fromTo('.skill-tag', 
+        {
+            x: -50,
+            opacity: 0
+        },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 0.6,
+            stagger: 0.08,
+            scrollTrigger: {
+                trigger: '.skills',
+                start: 'top 85%',
+                toggleActions: 'play none none reverse'
+            }
+        }
+    );
+
+    gsap.fromTo('.project-card', 
+        {
+            y: 80,
+            opacity: 0,
+            scale: 0.9
+        },
+        {
+            y: 0,
+            opacity: 1,
+            scale: 1,
+            duration: 0.8,
+            stagger: 0.15,
+            scrollTrigger: {
+                trigger: '.projects-grid',
+                start: 'top 85%',
+                toggleActions: 'play none none reverse'
+            }
+        }
+    );
+
+    gsap.fromTo('.experience-item', 
+        {
+            x: -60,
+            opacity: 0
+        },
+        {
+            x: 0,
+            opacity: 1,
+            duration: 0.7,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: '.experience-timeline',
+                start: 'top 80%',
+                toggleActions: 'play none none reverse'
+            }
+        }
+    );
+
+    gsap.fromTo('.contact-content', 
+        {
+            y: 60,
+            opacity: 0
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            scrollTrigger: {
+                trigger: '.contact',
+                start: 'top 85%',
+                toggleActions: 'play none none reverse'
+            }
+        }
+    );
+}
+
 document.addEventListener('DOMContentLoaded', async function() {
     const savedLanguage = localStorage.getItem('preferred-language') || 'ru';
     
     await loadTranslations(savedLanguage);
     
     loadComponents();
+    initGSAPScrollAnimations();
     initScrollAnimations();
     initTypingAnimation();
     initNavbarScroll();
     
     updateContent(savedLanguage);
+
+    updateExperienceDurations();
+    updateDateRanges();
 });
 
 window.addEventListener('error', function(e) {
