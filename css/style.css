@@ -299,12 +299,13 @@ section {
 .project-img {
     width: 100%;
     height: 200px;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    /* background: linear-gradient(135deg, var(--primary), var(--secondary)); */
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-size: 3rem;
+    overflow: hidden;
 }
 
 .project-content {
@@ -820,4 +821,17 @@ footer {
     .hero {
         margin-top: 5rem;
     }
+}
+
+.prg_img {
+    width: 100%;
+}
+
+.projects-grid-second-line {
+    margin-top: 2rem;
+}
+
+.projects-grid-two-inline {
+    grid-template-columns: repeat(2, 360px);
+    justify-content: center;
 }

@@ -30,6 +30,14 @@
       "title": "Jammer",
       "description": "Platform for independent game developers, similar to itch.io. Full-featured marketplace with game upload, sales, and review systems."
     },
+    "trucker": {
+      "title": "Trucker",
+      "description": "Working on client configurations within the Customer Technologies Team. Development and support of backend projects."
+    },
+    "viomitra": {
+      "title": "VioMitra",
+      "description": "Developing an online auction service. Managing interns and participating in microservice development."
+    },
     "purmarili": {
       "title": "Purmarili",
       "description": "Web application for a restaurant chain in Rostov-on-Don. Includes custom admin panel for content management."
@@ -46,26 +54,19 @@
     "title": "Work Experience",
     "trucker": {
       "title": "Backend Developer",
-      "company": "Trucker",
-      "description": "Working on client configurations in Customer Technologies Team. Development and maintenance of backend part of projects.",
-      "technologies": "Technologies"
+      "company": "Trucker"
     },
     "jammer": {
       "title": "Fullstack Developer & Co-founder",
-      "company": "Jammer",
-      "description": "Technical lead and one of the project founders. Developing a platform for independent game developers from scratch."
+      "company": "Jammer"
     },
     "viomitra": {
       "title": "Frontend Developer",
-      "company": "VioMitra",
-      "description": "Development of online auction service. Mentoring interns, participation in microservices development."
+      "company": "VioMitra"
     }
   },
   "contact": {
     "title": "Contact Me",
     "description": "Always open to new opportunities and interesting projects. Contact me and we'll discuss how I can help bring your ideas to life."
-  },
-  "footer": {
-    "copyright": "&copy; 2025 vgartg. All rights reserved."
   }
 }
