@@ -63,6 +63,28 @@
     "viomitra": {
       "title": "Frontend Developer",
       "company": "VioMitra"
+    },
+    "elina": {
+      "title": "Fullstack Developer",
+      "company": "GK \"Elina\""
+    },
+    "purmarili": {
+      "title": "Fullstack Developer",
+      "company": "Purmarili"
+    },
+    "dateRanges": {
+      "trucker": "December 2024 — Present",
+      "jammer": "July 2024 — Present",
+      "elina": "August 2025 — Present",
+      "purmarili": "May 2024 — Present",
+      "viomitra": "July 2023 — December 2024"
+    },
+    "durations": {
+      "trucker": "11 months",
+      "jammer": "1 year 4 months",
+      "elina": "2 mounths",
+      "purmarili": "1 year 1 month",
+      "viomitra": "1 year 6 months"
     }
   },
   "contact": {

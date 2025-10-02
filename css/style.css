@@ -835,3 +835,124 @@ footer {
     grid-template-columns: repeat(2, 360px);
     justify-content: center;
 }
+
+/* === Experience Section Styles === */
+.experience-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.experience-card {
+    background: var(--darker);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid var(--gray-dark);
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+
+.experience-card:hover::before {
+    opacity: 1;
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+}
+
+.experience-role {
+    font-size: 1.3rem;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    line-height: 1.3;
+}
+
+.experience-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+    min-width: fit-content;
+}
+
+.date-range {
+    font-weight: 600;
+    color: var(--light);
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.duration-badge {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--secondary);
+    padding: 0.3rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    white-space: nowrap;
+}
+
+.experience-company {
+    font-weight: 600;
+    color: var(--light);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.experience-grade {
+    color: var(--gray);
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+/* === Mobile Responsiveness === */
+@media (max-width: 768px) {
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .experience-date {
+        align-items: flex-start;
+    }
+
+    .experience-card {
+        padding: 1.5rem;
+    }
+
+    .experience-role {
+        font-size: 1.1rem;
+    }
+}
+
+/* === Existing Animation Styles === */
+.delay-4 {
+    animation-delay: 0.8s;
+}
