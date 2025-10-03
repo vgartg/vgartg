@@ -75,6 +75,7 @@ function loadComponents() {
         })
         .catch(error => {
             console.error('Error loading header:', error);
+            createFallbackNavigation();
         });
 
     fetch('components/footer.html')
@@ -84,7 +85,47 @@ function loadComponents() {
         })
         .catch(error => {
             console.error('Error loading footer:', error);
+            createFallbackFooter();
         });
+}
+
+function createFallbackNavigation() {
+    const header = document.getElementById('header');
+    header.innerHTML = `
+        <nav class="navbar">
+            <a href="#home" class="logo">vgartg</a>
+            <div class="nav-links">
+                <a href="#home">Главная</a>
+                <a href="#about">Обо мне</a>
+                <a href="#projects">Проекты</a>
+                <a href="#experience">Опыт</a>
+                <a href="#contact">Контакты</a>
+            </div>
+            <button class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    `;
+    initNavigation();
+}
+
+function createFallbackFooter() {
+    const footer = document.getElementById('footer');
+    footer.innerHTML = `
+        <footer>
+            <div class="footer-content">
+                <div class="footer-logo">vgartg</div>
+                <div class="footer-links">
+                    <a href="#home">Главная</a>
+                    <a href="#about">Обо мне</a>
+                    <a href="#projects">Проекты</a>
+                    <a href="#experience">Опыт</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+                <div class="copyright">© 2024 vgartg. Все права защищены.</div>
+            </div>
+        </footer>
+    `;
 }
 
 function initNavigation() {
@@ -100,12 +141,27 @@ function initNavigation() {
             if (navLinks.classList.contains('active')) {
                 icon.classList.remove('fa-bars');
                 icon.classList.add('fa-times');
+                document.body.style.overflow = 'hidden';
             } else {
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
+                document.body.style.overflow = '';
             }
         });
     }
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768 && navLinks && menuBtn) {
+                navLinks.classList.remove('active');
+                menuBtn.classList.remove('active');
+                const icon = menuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                document.body.style.overflow = '';
+            }
+        });
+    });
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -116,8 +172,10 @@ function initNavigation() {
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
+                const offsetTop = targetElement.offsetTop - 80;
+                
                 window.scrollTo({
-                    top: targetElement.offsetTop - 80,
+                    top: offsetTop,
                     behavior: 'smooth'
                 });
                 
@@ -127,6 +185,7 @@ function initNavigation() {
                     const icon = menuBtn.querySelector('i');
                     icon.classList.remove('fa-times');
                     icon.classList.add('fa-bars');
+                    document.body.style.overflow = '';
                 }
             }
         });
@@ -140,6 +199,7 @@ function initNavigation() {
                 const icon = menuBtn.querySelector('i');
                 icon.classList.remove('fa-times');
                 icon.classList.add('fa-bars');
+                document.body.style.overflow = '';
             }
         }
     });
@@ -269,7 +329,82 @@ function updateDateRanges() {
     });
 }
 
+function initMobileAnimations() {
+    if (window.innerWidth <= 768) {
+        console.log('Initializing mobile animations...');
+        
+        const mobileAnimateElements = (elements, delay = 0) => {
+            elements.forEach((element, index) => {
+                setTimeout(() => {
+                    element.style.opacity = '1';
+                    element.style.transform = 'translateY(0)';
+                }, delay + (index * 100));
+            });
+        };
+
+        const heroElements = document.querySelectorAll('.hero .fade-in');
+        setTimeout(() => {
+            mobileAnimateElements(heroElements, 300);
+        }, 500);
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        entry.target.style.transition = 'all 0.6s ease';
+                    }, 200);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const animateOnScroll = document.querySelectorAll('.about-content, .project-card, .experience-item, .contact-content, .skills');
+        animateOnScroll.forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease 0.2s';
+            observer.observe(el);
+        });
+
+        const skillTags = document.querySelectorAll('.skill-tag');
+        skillTags.forEach((tag, index) => {
+            tag.style.opacity = '0';
+            tag.style.transform = 'translateX(-20px)';
+            tag.style.transition = `all 0.4s ease ${index * 0.05}s`;
+        });
+
+        const skillsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    skillTags.forEach(tag => {
+                        tag.style.opacity = '1';
+                        tag.style.transform = 'translateX(0)';
+                    });
+                    skillsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        const skillsSection = document.querySelector('.skills');
+        if (skillsSection) {
+            skillsObserver.observe(skillsSection);
+        }
+    }
+}
+
 function initScrollAnimations() {
+    if (window.innerWidth <= 768) {
+        initMobileAnimations();
+        return;
+    }
+
     const fadeElements = document.querySelectorAll('.fade-in');
     
     const appearOptions = {
@@ -305,157 +440,249 @@ function initTypingAnimation() {
             currentTechIndex = (currentTechIndex + 1) % techStack.length;
         }
         
-        typeTech();
-        setInterval(typeTech, 2000);
+        if (window.innerWidth > 768 || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            typeTech();
+            setInterval(typeTech, 2000);
+        } else {
+            typingElement.textContent = 'современных технологий';
+        }
     }
 }
 
 function initNavbarScroll() {
+    let lastScrollY = window.scrollY;
+    const navbar = document.querySelector('.navbar');
+    
+    if (!navbar) return;
+    
     window.addEventListener('scroll', () => {
-        const navbar = document.querySelector('.navbar');
-        if (navbar) {
-            if (window.scrollY > 100) {
-                navbar.style.padding = '1rem 5%';
-                navbar.style.backgroundColor = 'rgba(13, 13, 20, 0.95)';
-            } else {
-                navbar.style.padding = '1.5rem 5%';
-                navbar.style.backgroundColor = 'rgba(13, 13, 20, 0.9)';
+        if (window.scrollY > 100) {
+            navbar.style.padding = '1rem 5%';
+            navbar.style.backgroundColor = 'rgba(13, 13, 20, 0.95)';
+            
+            if (window.innerWidth <= 768) {
+                if (window.scrollY > lastScrollY && window.scrollY > 200) {
+                    navbar.style.transform = 'translateY(-100%)';
+                } else {
+                    navbar.style.transform = 'translateY(0)';
+                }
             }
+        } else {
+            navbar.style.padding = '1.5rem 5%';
+            navbar.style.backgroundColor = 'rgba(13, 13, 20, 0.9)';
+            navbar.style.transform = 'translateY(0)';
         }
+        
+        lastScrollY = window.scrollY;
     });
 }
 
 function initGSAPScrollAnimations() {
+    if (window.innerWidth <= 768) {
+        console.log('Using mobile animations instead of GSAP');
+        return;
+    }
+
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
+        console.warn('GSAP or ScrollTrigger not available, using fallback animations');
+        initMobileAnimations();
+        return;
+    }
+
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.fromTo('.hero .fade-in', 
-        {
-            y: 50,
-            opacity: 0
-        },
-        {
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            stagger: 0.2,
-            delay: 0.3
-        }
-    );
-
-    gsap.fromTo('.about-content', 
-        {
-            y: 80,
-            opacity: 0
-        },
-        {
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            scrollTrigger: {
-                trigger: '.about',
-                start: 'top 80%',
-                end: 'bottom 40%',
-                toggleActions: 'play none none reverse'
+    try {
+        gsap.fromTo('.hero .fade-in', 
+            {
+                y: 50,
+                opacity: 0
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                stagger: 0.2,
+                delay: 0.3
             }
-        }
-    );
+        );
 
-    gsap.fromTo('.skill-tag', 
-        {
-            x: -50,
-            opacity: 0
-        },
-        {
-            x: 0,
-            opacity: 1,
-            duration: 0.6,
-            stagger: 0.08,
-            scrollTrigger: {
-                trigger: '.skills',
-                start: 'top 85%',
-                toggleActions: 'play none none reverse'
+        gsap.fromTo('.about-content', 
+            {
+                y: 80,
+                opacity: 0
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: '.about',
+                    start: 'top 80%',
+                    end: 'bottom 40%',
+                    toggleActions: 'play none none reverse'
+                }
             }
-        }
-    );
+        );
 
-    gsap.fromTo('.project-card', 
-        {
-            y: 80,
-            opacity: 0,
-            scale: 0.9
-        },
-        {
-            y: 0,
-            opacity: 1,
-            scale: 1,
-            duration: 0.8,
-            stagger: 0.15,
-            scrollTrigger: {
-                trigger: '.projects-grid',
-                start: 'top 85%',
-                toggleActions: 'play none none reverse'
+        gsap.fromTo('.skill-tag', 
+            {
+                x: -50,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
+                duration: 0.6,
+                stagger: 0.08,
+                scrollTrigger: {
+                    trigger: '.skills',
+                    start: 'top 85%',
+                    toggleActions: 'play none none reverse'
+                }
             }
-        }
-    );
+        );
 
-    gsap.fromTo('.experience-item', 
-        {
-            x: -60,
-            opacity: 0
-        },
-        {
-            x: 0,
-            opacity: 1,
-            duration: 0.7,
-            stagger: 0.1,
-            scrollTrigger: {
-                trigger: '.experience-timeline',
-                start: 'top 80%',
-                toggleActions: 'play none none reverse'
+        gsap.fromTo('.project-card', 
+            {
+                y: 80,
+                opacity: 0,
+                scale: 0.9
+            },
+            {
+                y: 0,
+                opacity: 1,
+                scale: 1,
+                duration: 0.8,
+                stagger: 0.15,
+                scrollTrigger: {
+                    trigger: '.projects-grid',
+                    start: 'top 85%',
+                    toggleActions: 'play none none reverse'
+                }
             }
-        }
-    );
+        );
 
-    gsap.fromTo('.contact-content', 
-        {
-            y: 60,
-            opacity: 0
-        },
-        {
-            y: 0,
-            opacity: 1,
-            duration: 1,
-            scrollTrigger: {
-                trigger: '.contact',
-                start: 'top 85%',
-                toggleActions: 'play none none reverse'
+        gsap.fromTo('.experience-item', 
+            {
+                x: -60,
+                opacity: 0
+            },
+            {
+                x: 0,
+                opacity: 1,
+                duration: 0.7,
+                stagger: 0.1,
+                scrollTrigger: {
+                    trigger: '.experience-timeline',
+                    start: 'top 80%',
+                    toggleActions: 'play none none reverse'
+                }
             }
-        }
-    );
+        );
+
+        gsap.fromTo('.contact-content', 
+            {
+                y: 60,
+                opacity: 0
+            },
+            {
+                y: 0,
+                opacity: 1,
+                duration: 1,
+                scrollTrigger: {
+                    trigger: '.contact',
+                    start: 'top 85%',
+                    toggleActions: 'play none none reverse'
+                }
+            }
+        );
+    } catch (error) {
+        console.error('GSAP animation error:', error);
+        initMobileAnimations();
+    }
+}
+
+function supportsIntersectionObserver() {
+    return 'IntersectionObserver' in window &&
+           'IntersectionObserverEntry' in window &&
+           'intersectionRatio' in window.IntersectionObserverEntry.prototype;
+}
+
+function supportsGSAP() {
+    return typeof gsap !== 'undefined';
 }
 
 document.addEventListener('DOMContentLoaded', async function() {
+    console.log('DOM loaded, initializing...');
+    
+    if (!supportsIntersectionObserver()) {
+        console.warn('Intersection Observer not supported, using fallback animations');
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+        });
+    }
+
     const savedLanguage = localStorage.getItem('preferred-language') || 'ru';
     
-    await loadTranslations(savedLanguage);
+    try {
+        await loadTranslations(savedLanguage);
+    } catch (error) {
+        console.error('Failed to load translations:', error);
+    }
     
     loadComponents();
-    initGSAPScrollAnimations();
-    initScrollAnimations();
-    initTypingAnimation();
-    initNavbarScroll();
+    
+    setTimeout(() => {
+        if (supportsGSAP() && window.innerWidth > 768) {
+            initGSAPScrollAnimations();
+        } else {
+            console.log('Using fallback animations');
+            initMobileAnimations();
+        }
+        
+        initScrollAnimations();
+        initTypingAnimation();
+        initNavbarScroll();
+    }, 100);
     
     updateContent(savedLanguage);
-
     updateExperienceDurations();
     updateDateRanges();
+});
+
+let resizeTimeout;
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+        console.log('Window resized, reinitializing animations...');
+        if (window.innerWidth <= 768) {
+            initMobileAnimations();
+        } else {
+            initGSAPScrollAnimations();
+        }
+    }, 250);
+});
+
+document.addEventListener('visibilitychange', function() {
+    if (!document.hidden) {
+        setTimeout(() => {
+            if (window.innerWidth <= 768) {
+                initMobileAnimations();
+            }
+        }, 100);
+    }
 });
 
 window.addEventListener('error', function(e) {
     console.error('Error loading resource:', e);
 });
 
-function reinitAnimations() {
+window.reinitAnimations = function() {
+    if (window.innerWidth <= 768) {
+        initMobileAnimations();
+    } else {
+        initGSAPScrollAnimations();
+    }
     initScrollAnimations();
-    initTypingAnimation();
-}
+};

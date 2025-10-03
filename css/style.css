@@ -970,3 +970,178 @@ footer {
     opacity: 0;
     transform: translateY(30px);
 }
+
+@media (max-width: 768px) {
+    .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+        animation: none !important;
+    }
+    
+    @media (prefers-reduced-motion: no-preference) {
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.appear {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .experience-timeline {
+        gap: 1rem;
+    }
+
+    .experience-card {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .experience-date {
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .date-range {
+        font-size: 0.9rem;
+        white-space: normal;
+        margin-bottom: 0.5rem;
+    }
+
+    .duration-badge {
+        align-self: flex-start;
+    }
+
+    .experience-role {
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    .experience-company {
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .projects-grid-two-inline {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem;
+    }
+
+    .projects-grid-second-line {
+        margin-top: 1.5rem;
+    }
+
+    .project-card {
+        margin-bottom: 1.5rem;
+    }
+
+    .hero {
+        min-height: 80vh;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    .typing-text {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+        min-height: auto;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-content {
+        gap: 2rem;
+    }
+
+    .skills {
+        gap: 0.5rem;
+    }
+
+    .skill-tag {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    section {
+        padding: 3rem 5%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .typing-text {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .experience-card {
+        padding: 1.2rem;
+    }
+
+    .project-content {
+        padding: 1.2rem;
+    }
+
+    .contact-link {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding-top: 4rem;
+    }
+    
+    .nav-links.active {
+        max-height: 70vh;
+        overflow-y: auto;
+    }
+}
+
+.iam_img, .prg_img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .about-content,
+    .project-card,
+    .experience-item,
+    .contact-content {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
