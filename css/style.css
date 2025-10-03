@@ -1145,3 +1145,12 @@ footer {
         transform: none !important;
     }
 }
+
+.purmarili-rnd-style-png {
+    position: relative;
+    top: 2rem;
+}
+
+.background_black {
+    background: black
+}
