@@ -302,18 +302,18 @@ function updateExperienceDurations() {
 
 function updateDateRanges() {
     const dateRanges = {
-        'trucker': { start: 'Декабрь 2024', end: 'настоящее время' },
-        'jammer': { start: 'Июль 2024', end: 'настоящее время' },
-        'elina': { start: 'Август 2025', end: 'настоящее время' },
-        'purmarili': { start: 'Май 2024', end: 'Сентябрь 2024' },
-        'viomitra': { start: 'Июль 2023', end: 'Декабрь 2024' }
+        'trucker': { start: 'Декабрь 2024', end: 'настоящее время', en_start: 'December 2024', en_end: 'Present' },
+        'jammer': { start: 'Июль 2024', end: 'настоящее время', en_start: 'July 2024', en_end: 'Present' },
+        'elina': { start: 'Август 2025', end: 'настоящее время', en_start: 'August 2025', en_end: 'Present' },
+        'purmarili': { start: 'Май 2024', end: 'Сентябрь 2024', en_start: 'May 2024', en_end: 'September 2024' },
+        'viomitra': { start: 'Июль 2023', end: 'Декабрь 2024', en_start: 'July 2023', en_end: 'December 2024' }
     };
 
     Object.keys(dateRanges).forEach(key => {
         const range = dateRanges[key];
         const rangeText = currentLanguage === 'ru' 
             ? `${range.start} — ${range.end}`
-            : `${range.start} — ${range.end === 'настоящее время' ? 'Present' : range.end}`;
+            : `${range.en_start} — ${range.en_end}`;
         
         const rangeElement = document.querySelector(`[data-i18n="experience.dateRanges.${key}"]`);
         if (rangeElement) {
@@ -429,7 +429,7 @@ function initScrollAnimations() {
 }
 
 function initTypingAnimation() {
-    const techStack = ['Ruby', 'Ruby-on-Rails', 'JavaScript', 'TypeScript', 'React', 'ASP.NET'];
+    const techStack = ['Ruby', 'JavaScript', 'TypeScript', 'React', 'Ruby-on-Rails', 'ASP.NET'];
     let currentTechIndex = 0;
     const typingElement = document.querySelector('.changing-tech');
     
