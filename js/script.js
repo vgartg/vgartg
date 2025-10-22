@@ -330,9 +330,7 @@ function updateDateRanges() {
 }
 
 function initMobileAnimations() {
-    if (window.innerWidth <= 768) {
-        console.log('Initializing mobile animations...');
-        
+    if (window.innerWidth <= 768) {        
         const mobileAnimateElements = (elements, delay = 0) => {
             elements.forEach((element, index) => {
                 setTimeout(() => {
@@ -479,7 +477,6 @@ function initNavbarScroll() {
 
 function initGSAPScrollAnimations() {
     if (window.innerWidth <= 768) {
-        console.log('Using mobile animations instead of GSAP');
         return;
     }
 
@@ -612,9 +609,7 @@ function supportsGSAP() {
     return typeof gsap !== 'undefined';
 }
 
-document.addEventListener('DOMContentLoaded', async function() {
-    console.log('DOM loaded, initializing...');
-    
+document.addEventListener('DOMContentLoaded', async function() {    
     if (!supportsIntersectionObserver()) {
         console.warn('Intersection Observer not supported, using fallback animations');
         document.querySelectorAll('.fade-in').forEach(el => {
@@ -637,7 +632,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         if (supportsGSAP() && window.innerWidth > 768) {
             initGSAPScrollAnimations();
         } else {
-            console.log('Using fallback animations');
             initMobileAnimations();
         }
         
@@ -655,7 +649,6 @@ let resizeTimeout;
 window.addEventListener('resize', function() {
     clearTimeout(resizeTimeout);
     resizeTimeout = setTimeout(() => {
-        console.log('Window resized, reinitializing animations...');
         if (window.innerWidth <= 768) {
             initMobileAnimations();
         } else {
@@ -686,3 +679,168 @@ window.reinitAnimations = function() {
     }
     initScrollAnimations();
 };
+
+function initUiverseAnimations() {    
+    if (window.innerWidth > 768) {
+        const scrollSections = document.querySelectorAll('section');
+        
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        scrollSections.forEach(section => {
+            section.classList.add('section-scroll');
+            sectionObserver.observe(section);
+        });
+    }
+
+    function animateSkills() {
+        const skills = document.querySelectorAll('.skill-tag');
+        skills.forEach((skill, index) => {
+            skill.style.animationDelay = `${index * 0.05}s`;
+        });
+    }
+
+    function initProjectCardAnimations() {
+        const projectCards = document.querySelectorAll('.project-card');
+        
+        projectCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                if (window.innerWidth > 768) {
+                    this.style.transform = 'translateY(-15px) scale(1.02)';
+                }
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    }
+
+    function initContactAnimations() {
+        const contactLinks = document.querySelectorAll('.contact-link');
+        
+        contactLinks.forEach(link => {
+            link.addEventListener('mouseenter', function() {
+                const icon = this.querySelector('i');
+                if (icon && window.innerWidth > 768) {
+                    icon.style.transform = 'scale(1.3) rotate(10deg)';
+                }
+            });
+            
+            link.addEventListener('mouseleave', function() {
+                const icon = this.querySelector('i');
+                if (icon) {
+                    icon.style.transform = 'scale(1) rotate(0deg)';
+                }
+            });
+        });
+    }
+
+    animateSkills();
+    initProjectCardAnimations();
+    initContactAnimations();
+
+    setTimeout(() => {
+        document.body.classList.add('loading-animate');
+    }, 100);
+}
+
+function animateExperienceCards() {
+    const experienceCards = document.querySelectorAll('.experience-card');
+    
+    experienceCards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.1}s`;
+    });
+}
+
+function initEnhancedAnimations() {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(initUiverseAnimations, 500);
+        });
+    } else {
+        setTimeout(initUiverseAnimations, 500);
+    }
+}
+
+function enhanceLanguageSwitch() {
+    const langButtons = document.querySelectorAll('.lang-btn');
+    
+    langButtons.forEach(btn => {
+        const originalClick = btn.onclick;
+        btn.onclick = function(e) {
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 150);
+            
+            if (originalClick) originalClick.call(this, e);
+        };
+    });
+}
+
+function initSmoothScrollAnimations() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#' || targetId === '#home') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                e.preventDefault();
+                const offsetTop = targetElement.offsetTop - 80;
+                
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+}
+
+const originalInitLanguageSwitcher = initLanguageSwitcher;
+window.initLanguageSwitcher = function() {
+    originalInitLanguageSwitcher();
+    enhanceLanguageSwitch();
+};
+
+const originalUpdateContent = updateContent;
+window.updateContent = function(lang) {
+    originalUpdateContent(lang);
+    setTimeout(() => {
+        animateExperienceCards();
+    }, 300);
+};
+
+function initAfterComponents() {
+    setTimeout(() => {
+        initEnhancedAnimations();
+        initSmoothScrollAnimations();
+        enhanceLanguageSwitch();
+    }, 1000);
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAfterComponents);
+} else {
+    initAfterComponents();
+}
+
+let resizeTimer;
+window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+        if (window.innerWidth > 768) {
+            initUiverseAnimations();
+        }
+    }, 250);
+});
