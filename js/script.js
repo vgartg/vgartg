@@ -844,3 +844,65 @@ window.addEventListener('resize', function() {
         }
     }, 250);
 });
+
+const circle = document.getElementById('cursor-circle');
+
+let cursorX = window.innerWidth / 2;
+let cursorY = window.innerHeight / 2;
+let circleX = cursorX;
+let circleY = cursorY;
+
+const speed = 0.12;
+
+function animateCursor() {
+    circleX += (cursorX - circleX) * speed;
+    circleY += (cursorY - circleY) * speed;
+    circle.style.transform = `translate(${circleX}px, ${circleY}px) translate(-50%, -50%)`;
+    requestAnimationFrame(animateCursor);
+}
+animateCursor();
+
+window.addEventListener("mousemove", (e) => {
+    cursorX = e.clientX;
+    cursorY = e.clientY;
+    document.body.classList.add("mouse-move");
+});
+
+document.querySelectorAll("a, button").forEach(el => {
+    el.addEventListener("mouseenter", () => {
+        circle.style.width = "14px";
+        circle.style.height = "14px";
+    });
+    el.addEventListener("mouseleave", () => {
+        circle.style.width = "26px";
+        circle.style.height = "26px";
+    });
+});
+
+const dot = document.getElementById('cursor-dot');
+
+let dotX = window.innerWidth / 2;
+let dotY = window.innerHeight / 2;
+
+function animateDot() {
+    dotX += (cursorX - dotX) * 0.25;
+    dotY += (cursorY - dotY) * 0.25;
+    dot.style.transform = `translate(${dotX}px, ${dotY}px) translate(-50%, -50%)`;
+    requestAnimationFrame(animateDot);
+}
+animateDot();
+
+window.addEventListener("mousemove", (e) => {
+    dot.style.opacity = 1;
+});
+
+document.querySelectorAll("a, button").forEach(el => {
+    el.addEventListener("mouseenter", () => {
+        dot.style.transform += " scale(1.8)";
+        circle.style.transform += " scale(0.7)";
+    });
+    el.addEventListener("mouseleave", () => {
+        dot.style.transform = dot.style.transform.replace(/scale\(.*?\)/, "");
+        circle.style.transform = circle.style.transform.replace(/scale\(.*?\)/, "");
+    });
+});
