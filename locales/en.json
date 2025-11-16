@@ -28,7 +28,13 @@
     "title": "My Projects",
     "jammer": {
       "title": "Jammer",
-      "description": "Platform for independent game developers, similar to itch.io. Full-featured marketplace with game upload, sales, and review systems."
+      "description": "Platform for independent game developers, similar to itch.io. Full-featured marketplace with game upload, sales, and review systems.",
+      "requisites": "Company Details",
+      "role": "CEO",
+      "fio": "Gorbanev V.O.",
+      "inn": "INN",
+      "kpp": "KPP",
+      "ogrn": "OGRN"
     },
     "trucker": {
       "title": "Trucker",
@@ -90,5 +96,11 @@
   "contact": {
     "title": "Contact Me",
     "description": "Always open to new opportunities and interesting projects. Contact me and we'll discuss how I can help bring your ideas to life."
+  },
+  "copy": {
+    "inn": "INN copied",
+    "kpp": "KPP copied", 
+    "ogrn": "OGRN copied",
+    "success": "Copied!"
   }
 }
