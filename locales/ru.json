@@ -38,7 +38,7 @@
     },
     "trucker": {
       "title": "Trucker",
-      "description": "Работа над клиентскими конфигурациями в команде Customer Technologies Team. Разработка и поддержка backend-части проектов."
+      "description": "Сервис для автоматизации логистики крупных компаний, работа над клиентскими конфигурациями в команде Customer Technologies."
     },
     "viomitra": {
       "title": "VioMitra",
@@ -51,6 +51,10 @@
     "elina": {
       "title": "ГК \"Элина\"",
       "description": "Веб-приложение для продажи недвижимости в Ростовской области и новых республиках. Система фильтрации, карты, административная панель."
+    },
+    "prostor": {
+      "title": "ЖК \"Простор\"",
+      "description": "Сайт-визитка жилого комплекса. Отдельный модуль крупного проекта ГК \"Элина\"."
     },
     "inDevelopment": "В разработке",
     "prototype": "Прототип",
@@ -74,6 +78,10 @@
       "title": "Fullstack Developer",
       "company": "ГК \"Элина\""
     },
+    "prostor": {
+      "title": "Fullstack Developer",
+      "company": "ЖК \"Простор\""
+    },
     "purmarili": {
       "title": "Fullstack Developer",
       "company": "Пурмарили"
@@ -82,6 +90,7 @@
       "trucker": "Декабрь 2024 — настоящее время",
       "jammer": "Июль 2024 — настоящее время",
       "elina": "Август 2025 — настоящее время",
+      "prostor": "Август 2025 — настоящее время",
       "purmarili": "Май 2024 — Сентябрь 2024",
       "viomitra": "Июль 2023 — Декабрь 2024"
     },
@@ -89,6 +98,7 @@
       "trucker": "",
       "jammer": "",
       "elina": "",
+      "prostor": "",
       "purmarili": "",
       "viomitra": ""
     }

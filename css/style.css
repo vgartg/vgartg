@@ -827,15 +827,6 @@ footer {
     width: 100%;
 }
 
-.projects-grid-second-line {
-    margin-top: 2rem;
-}
-
-.projects-grid-two-inline {
-    grid-template-columns: repeat(2, 360px);
-    justify-content: center;
-}
-
 .experience-timeline {
     max-width: 800px;
     margin: 0 auto;
@@ -1029,15 +1020,6 @@ footer {
     .experience-company {
         font-size: 1rem;
         margin: 0.5rem 0;
-    }
-
-    .projects-grid-two-inline {
-        grid-template-columns: 1fr !important;
-        gap: 1.5rem;
-    }
-
-    .projects-grid-second-line {
-        margin-top: 1.5rem;
     }
 
     .project-card {

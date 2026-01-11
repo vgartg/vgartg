@@ -271,6 +271,11 @@ function updateExperienceDurations() {
             endDate: 'present'
         },
         {
+            key: 'prostor',
+            startDate: '2025-08-01',
+            endDate: 'present'
+        },
+        {
             key: 'purmarili',
             startDate: '2024-05-01',
             endDate: '2024-09-01'
@@ -305,6 +310,7 @@ function updateDateRanges() {
         'trucker': { start: 'Декабрь 2024', end: 'настоящее время', en_start: 'December 2024', en_end: 'Present' },
         'jammer': { start: 'Июль 2024', end: 'настоящее время', en_start: 'July 2024', en_end: 'Present' },
         'elina': { start: 'Август 2025', end: 'настоящее время', en_start: 'August 2025', en_end: 'Present' },
+        'prostor': { start: 'Август 2025', end: 'настоящее время', en_start: 'August 2025', en_end: 'Present' },
         'purmarili': { start: 'Май 2024', end: 'Сентябрь 2024', en_start: 'May 2024', en_end: 'September 2024' },
         'viomitra': { start: 'Июль 2023', end: 'Декабрь 2024', en_start: 'July 2023', en_end: 'December 2024' }
     };

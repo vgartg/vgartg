@@ -38,7 +38,7 @@
     },
     "trucker": {
       "title": "Trucker",
-      "description": "Working on client configurations within the Customer Technologies Team. Development and support of backend projects."
+      "description": "Service for automating logistics for large companies, working on client configurations in the Customer Technologies Team."
     },
     "viomitra": {
       "title": "VioMitra",
@@ -51,6 +51,10 @@
     "elina": {
       "title": "GK \"Elina\"",
       "description": "Web application for real estate sales in Rostov region and new republics. Filtering system, maps, administrative panel."
+    },
+    "prostor": {
+      "title": "JK \"Prostor\"",
+      "description": "The website of the residential complex. A separate module of the large project of the Elina Group."
     },
     "inDevelopment": "In Development",
     "prototype": "Prototype",
@@ -74,6 +78,10 @@
       "title": "Fullstack Developer",
       "company": "GK \"Elina\""
     },
+    "prostor": {
+      "title": "Fullstack Developer",
+      "company": "JK \"Prostor\""
+    },
     "purmarili": {
       "title": "Fullstack Developer",
       "company": "Purmarili"
@@ -82,6 +90,7 @@
       "trucker": "December 2024 — Present",
       "jammer": "July 2024 — Present",
       "elina": "August 2025 — Present",
+      "prostor": "August 2025 — Present",
       "purmarili": "May 2024 — September 2024",
       "viomitra": "July 2023 — December 2024"
     },
@@ -89,6 +98,7 @@
       "trucker": "",
       "jammer": "",
       "elina": "",
+      "prostor": "",
       "purmarili": "",
       "viomitra": ""
     }
