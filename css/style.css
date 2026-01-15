@@ -71,21 +71,6 @@ body {
     color: var(--primary);
 }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--primary);
-    transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
 .menu-btn {
     display: none;
     background: none;
@@ -1346,21 +1331,6 @@ footer {
 .logo {
     position: relative;
     overflow: hidden;
-}
-
-.logo::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: var(--primary);
-    transition: width 0.3s ease;
-}
-
-.logo:hover::after {
-    width: 100%;
 }
 
 @keyframes pulse-glow {
