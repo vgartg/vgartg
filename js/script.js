@@ -1,4 +1,4 @@
-let currentLanguage = 'ru';
+let currentLanguage = 'en';
 let translations = {};
 
 async function loadTranslations(lang) {
@@ -37,6 +37,7 @@ function updateContent(lang) {
     updateDateRanges();
     
     document.querySelectorAll('.lang-btn').forEach(btn => {
+        if (btn.classList.contains('default-active')) btn.classList.remove('default-active');
         if (btn.getAttribute('data-lang') === lang) {
             btn.classList.add('active');
         } else {
@@ -72,60 +73,21 @@ function loadComponents() {
             document.getElementById('header').innerHTML = data;
             initNavigation();
             initLanguageSwitcher();
+            updateContent(currentLanguage);
         })
         .catch(error => {
             console.error('Error loading header:', error);
-            createFallbackNavigation();
         });
 
     fetch('components/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;
+            updateContent(currentLanguage);
         })
         .catch(error => {
             console.error('Error loading footer:', error);
-            createFallbackFooter();
         });
-}
-
-function createFallbackNavigation() {
-    const header = document.getElementById('header');
-    header.innerHTML = `
-        <nav class="navbar">
-            <a href="#home" class="logo">vgartg</a>
-            <div class="nav-links">
-                <a href="#home">Главная</a>
-                <a href="#about">Обо мне</a>
-                <a href="#projects">Проекты</a>
-                <a href="#experience">Опыт</a>
-                <a href="#contact">Контакты</a>
-            </div>
-            <button class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </button>
-        </nav>
-    `;
-    initNavigation();
-}
-
-function createFallbackFooter() {
-    const footer = document.getElementById('footer');
-    footer.innerHTML = `
-        <footer>
-            <div class="footer-content">
-                <div class="footer-logo">vgartg</div>
-                <div class="footer-links">
-                    <a href="#home">Главная</a>
-                    <a href="#about">Обо мне</a>
-                    <a href="#projects">Проекты</a>
-                    <a href="#experience">Опыт</a>
-                    <a href="#contact">Контакты</a>
-                </div>
-                <div class="copyright">© 2024 vgartg. Все права защищены.</div>
-            </div>
-        </footer>
-    `;
 }
 
 function initNavigation() {
@@ -432,25 +394,82 @@ function initScrollAnimations() {
     });
 }
 
+let typingAnimationInterval = null;
+let typingPhraseIndex = 0;
+let typingCharIndex = 0;
+let typingIsDeleting = false;
+let typingIsPaused = false;
+
 function initTypingAnimation() {
-    const techStack = ['Ruby', 'JavaScript', 'TypeScript', 'React', 'Ruby-on-Rails', 'ASP.NET'];
-    let currentTechIndex = 0;
-    const typingElement = document.querySelector('.changing-tech');
+    const phrases = {
+        ru: [
+            'продукты, которые работают',
+            'системы, которые масштабируются', 
+            'архитектуру, которую можно поддерживать',
+            'решения, которые решают проблемы'
+        ],
+        en: [
+            'products that work',
+            'systems that scale',
+            'architecture you can maintain', 
+            'solutions that solve problems'
+        ]
+    };
     
-    if (typingElement) {
-        function typeTech() {
-            const currentTech = techStack[currentTechIndex];
-            typingElement.textContent = currentTech;
-            currentTechIndex = (currentTechIndex + 1) % techStack.length;
+    if (typingAnimationInterval) {
+        clearInterval(typingAnimationInterval);
+        typingAnimationInterval = null;
+    }
+    
+    typingPhraseIndex = 0;
+    typingCharIndex = 0;
+    typingIsDeleting = false;
+    typingIsPaused = false;
+    
+    const typingElement = document.querySelector('.changing-tech');
+    if (!typingElement) return;
+    
+    function getCurrentPhrases() {
+        return phrases[currentLanguage] || phrases.ru;
+    }
+    
+    function type() {
+        const currentPhrases = getCurrentPhrases();
+        const currentPhrase = currentPhrases[typingPhraseIndex];
+        
+        if (typingIsDeleting) {
+            typingElement.textContent = currentPhrase.substring(0, typingCharIndex - 1);
+            typingCharIndex--;
+        } else {
+            typingElement.textContent = currentPhrase.substring(0, typingCharIndex + 1);
+            typingCharIndex++;
         }
         
-        if (window.innerWidth > 768 || !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            typeTech();
-            setInterval(typeTech, 2000);
-        } else {
-            typingElement.textContent = 'современных технологий';
+        if (!typingIsDeleting && typingCharIndex === currentPhrase.length) {
+            typingIsPaused = true;
+            setTimeout(() => {
+                typingIsPaused = false;
+                typingIsDeleting = true;
+                typingCharIndex = currentPhrase.length;
+            }, 1500);
         }
+        
+        if (typingIsDeleting && typingCharIndex === 0) {
+            typingIsDeleting = false;
+            typingPhraseIndex = (typingPhraseIndex + 1) % currentPhrases.length;
+        }
+        
+        const speed = typingIsDeleting ? 50 : typingIsPaused ? 1000 : 100;
+        typingAnimationInterval = setTimeout(type, speed);
     }
+    
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const currentPhrases = getCurrentPhrases();
+        typingElement.textContent = currentPhrases[0];
+        return;
+    }
+    
+    typingAnimationInterval = setTimeout(type, 1000);
 }
 
 function initNavbarScroll() {
@@ -615,7 +634,7 @@ function supportsGSAP() {
     return typeof gsap !== 'undefined';
 }
 
-document.addEventListener('DOMContentLoaded', async function() {    
+document.addEventListener('DOMContentLoaded', async function() {
     if (!supportsIntersectionObserver()) {
         console.warn('Intersection Observer not supported, using fallback animations');
         document.querySelectorAll('.fade-in').forEach(el => {
@@ -624,7 +643,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         });
     }
 
-    const savedLanguage = localStorage.getItem('preferred-language') || 'ru';
+    const savedLanguage = 'en';
     
     try {
         await loadTranslations(savedLanguage);
@@ -642,7 +661,6 @@ document.addEventListener('DOMContentLoaded', async function() {
         }
         
         initScrollAnimations();
-        initTypingAnimation();
         initNavbarScroll();
     }, 100);
     
@@ -822,11 +840,15 @@ window.initLanguageSwitcher = function() {
 };
 
 const originalUpdateContent = updateContent;
-window.updateContent = function(lang) {
-    originalUpdateContent(lang);
-    setTimeout(() => {
-        animateExperienceCards();
-    }, 300);
+updateContent = function(lang) {
+    if (typingAnimationInterval) {
+        clearTimeout(typingAnimationInterval);
+        typingAnimationInterval = null;
+    }
+    
+    originalUpdateContent.call(this, lang);
+    
+    setTimeout(initTypingAnimation, 500);
 };
 
 function initAfterComponents() {

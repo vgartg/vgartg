@@ -1477,7 +1477,7 @@ footer {
         radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.1) 0%, transparent 50%),
         radial-gradient(circle at 40% 80%, rgba(99, 102, 241, 0.1) 0%, transparent 50%);
-    animation: float 6s ease-in-out infinite;
+    /* animation: float 6s ease-in-out infinite; */
     pointer-events: none;
 }
 
@@ -1910,4 +1910,67 @@ body:not(.mouse-move) #cursor-dot {
 
 .requisites-value.copied i {
     transform: scale(1.2);
+}
+
+.brand-mark {
+    font-size: 1rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--light);
+    opacity: 0.7;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.typing-text .changing-tech {
+    color: var(--primary);
+    border-right: 2px solid var(--primary);
+    padding-right: 4px;
+    animation: blink-caret 0.75s step-end infinite;
+    min-width: 1px;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: var(--primary); }
+}
+
+.typing-text {
+    white-space: nowrap;
+}
+
+.hero .btn-container {
+    display: none;
+}
+
+.changing-tech {
+    transition: opacity 0.3s ease;
+}
+
+.changing-language .changing-tech {
+    opacity: 0;
+}
+
+.hero-content .fade-in {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.updating-language .changing-tech {
+    animation: none !important;
+    border-right: none !important;
+}
+
+@keyframes typing-appear {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.language-updated .changing-tech {
+    animation: typing-appear 0.5s ease forwards;
+}
+
+.lang-btn.default-active {
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
+    color: var(--bg-dark);
 }

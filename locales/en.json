@@ -7,13 +7,11 @@
     "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hi, I'm",
-    "title": "Fullstack Developer",
-    "name": "Valery",
+    "brand": "VGARTG",
+    "title": "Web-developer",
     "typing_first": "Creating",
-    "typing_second": "with",
-    "typing_between": "digital-products",
-    "description": "Turning complex ideas into elegant and functional solutions. Over 2 years of experience in web development.",
+    "description": "I show the path of a person who works with real systems, writes code, makes decisions, and is responsible for their consequences.",
+    "second_description": "I'm interested in products, architecture, business, and thinking, not info-noise.",
     "projects": "My Projects",
     "contact": "Contact Me"
   },
