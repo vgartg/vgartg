@@ -1086,7 +1086,7 @@ function initCopyToClipboard() {
             e.stopPropagation();
             
             const value = this.getAttribute('data-value');
-            const successText = this.getAttribute('data-copy-text') || 'Скопировано!';
+            const successText = currentLanguage === 'ru' ? 'Скопировано!' : 'Copied!';
             
             copyToClipboard(value, this, successText);
         });

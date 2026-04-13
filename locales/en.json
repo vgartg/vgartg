@@ -104,11 +104,5 @@
   "contact": {
     "title": "Contact Me",
     "description": "Always open to new opportunities and interesting projects. Contact me and we'll discuss how I can help bring your ideas to life."
-  },
-  "copy": {
-    "inn": "INN copied",
-    "kpp": "KPP copied", 
-    "ogrn": "OGRN copied",
-    "success": "Copied!"
   }
 }
