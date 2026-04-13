@@ -1980,3 +1980,10 @@ body:not(.mouse-move) #cursor-dot {
     border-color: var(--accent-primary);
     color: var(--bg-dark);
 }
+
+@media (pointer: coarse), (max-width: 768px) {
+    #cursor-circle,
+    #cursor-dot {
+        display: none !important;
+    }
+}
