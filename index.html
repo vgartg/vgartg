@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vgartg - Fullstack Developer</title>
+    <title>vgartg — Fullstack Developer</title>
+    <meta name="description" content="Fullstack разработчик из Ростова-на-Дону. Создаю веб-приложения на Ruby on Rails, React, TypeScript. Проекты: Jammer, Trucker, VioMitra и другие.">
+    <meta name="keywords" content="fullstack, backend, developer, ruby, ruby on rails, react, typescript, javascript, js, ts, web, веб-разработка, ростов-на-дону, vgartg">
+    <link rel="canonical" href="https://vgartg.ru/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -11,7 +14,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="/assets/icons/logo.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png">
+
+    <script type="text/javascript" src="js/yandex_metrika.js"></script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/108539322" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="vgartg — Fullstack Developer">
+    <meta property="og:description" content="Fullstack разработчик из Ростова-на-Дону. Ruby on Rails, React, TypeScript. Реальные проекты и чистый код.">
+    <meta property="og:image" content="https://vgartg.ru/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://vgartg.ru/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="vgartg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="vgartg — Fullstack Developer">
+    <meta name="twitter:description" content="Fullstack разработчик из Ростова-на-Дону.">
+    <meta name="twitter:image" content="https://vgartg.ru/assets/images/og-image.jpg">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "vgartg",
+            "alternateName": "Горбанёв В.О.",
+            "jobTitle": "Fullstack Developer",
+            "url": "https://vgartg.ru/",
+            "sameAs": [
+                "https://github.com/vgartg",
+                "https://t.me/vgartg"
+            ],
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Jammer"
+            },
+            "knowsAbout": ["Ruby on Rails", "React", "TypeScript", "PostgreSQL", "Sidekiq", "Hotwire"]
+        }
+    </script>
 </head>
 <body>
     <div id="header"></div>
@@ -27,10 +69,6 @@
                 </div>
                 <p class="fade-in delay-2" data-i18n="hero.description"></p>
                 <p class="fade-in delay-2" data-i18n="hero.second_description"></p>
-                <div class="btn-container fade-in delay-3">
-                    <a href="#projects" class="btn" data-i18n="hero.projects"></a>
-                    <a href="#contact" class="btn btn-secondary" data-i18n="hero.contact"></a>
-                </div>
             </div>
         </section>
 
@@ -70,7 +108,7 @@
                 </div>
                 <div class="about-image iam_img_block">
                     <div class="placeholder-image">
-                        <img class="iam_img" src="assets/images/iam.jpg">
+                        <img class="iam_img" loading="lazy" src="/assets/images/iam.jpg" alt="Developer image">
                     </div>
                 </div>
             </div>
@@ -81,7 +119,7 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="prg_img" src="/assets/images/jammer.png">
+                        <img class="prg_img" loading="lazy" src="/assets/images/jammer.png" alt="Logo Jammer">
                     </div>
                     <div class="experience-date">
                         <span class="date-range" data-i18n="experience.dateRanges.jammer"></span>
@@ -144,7 +182,7 @@
                 
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="prg_img" src="/assets/images/trucker.png">
+                        <img class="prg_img" loading="lazy" src="/assets/images/trucker.png" alt="Logo Trucker">
                     </div>
                     <div class="experience-date">
                         <span class="date-range" data-i18n="experience.dateRanges.trucker"></span>
@@ -168,7 +206,7 @@
                 
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="prg_img" src="/assets/images/viomitra.png">
+                        <img class="prg_img" loading="lazy" src="/assets/images/viomitra.png" alt="Logo VioMitra">
                     </div>
                     <div class="experience-date">
                         <span class="date-range" data-i18n="experience.dateRanges.viomitra"></span>
@@ -192,7 +230,7 @@
 
                 <div class="project-card">
                     <div class="project-img purmarili-rnd-style-png">
-                        <img class="prg_img" src="/assets/images/purmarili.png">
+                        <img class="prg_img" loading="lazy" src="/assets/images/purmarili.png" alt="Logo Purmarili">
                     </div>
                     <div class="experience-date">
                         <span class="date-range" data-i18n="experience.dateRanges.purmarili"></span>
@@ -211,7 +249,7 @@
                 
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="prg_img" src="/assets/images/gk_elina.png">
+                        <img class="prg_img" loading="lazy" src="/assets/images/gk_elina.png" alt="Logo Gk Elina">
                     </div>
                     <div class="experience-date">
                         <span class="date-range" data-i18n="experience.dateRanges.elina"></span>
@@ -232,7 +270,7 @@
 
                 <div class="project-card">
                     <div class="project-img">
-                        <img class="prg_img" src="/assets/images/prostor.png">
+                        <img class="prg_img" loading="lazy" src="/assets/images/prostor.png" alt="Logo JK Prostor">
                     </div>
                     <div class="experience-date">
                         <span class="date-range" data-i18n="experience.dateRanges.prostor"></span>
@@ -280,6 +318,6 @@
     <div id="cursor-circle"></div>
     <div id="cursor-dot"></div>
 
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

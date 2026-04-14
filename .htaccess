@@ -1,11 +1,18 @@
-<IfModule mod_rewrite.c>
-    <FilesMatch "\.(html)$">
-        Header set Cache-Control "no-cache, must-revalidate"
-    </FilesMatch>
+RewriteEngine On
 
-    <FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg)$">
-        Header set Cache-Control "public, max-age=86400, must-revalidate"
-    </FilesMatch>
-    
-    RewriteEngine On
-</IfModule>
+# Редирект с WWW
+RewriteCond %{HTTP_HOST} ^www\.vgartg\.ru [NC]
+RewriteRule ^(.*)$ https://vgartg.ru/$1 [L,R=301]
+
+# Редирект с HTTP на HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
+
+# Заголовки кэширования 
+<FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+</FilesMatch>
+
+<FilesMatch "\.(css|js|jpg|jpeg|png|gif|svg)$">
+    Header set Cache-Control "public, max-age=86400, must-revalidate"
+</FilesMatch>
