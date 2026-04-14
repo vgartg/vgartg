@@ -643,7 +643,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         });
     }
 
-    const savedLanguage = 'en';
+    const savedLanguage = 'ru';
     
     try {
         await loadTranslations(savedLanguage);
