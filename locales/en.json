@@ -12,7 +12,7 @@
     "typing_first": "Creating",
     "description": "I show the path of a person who works with real systems, writes code, makes decisions, and is responsible for their consequences.",
     "second_description": "I'm interested in products, architecture, business, and thinking, not info-noise :)",
-    "projects": "My Projects",
+    "projects": "My Experience",
     "contact": "Contact Me"
   },
   "about": {
@@ -23,10 +23,10 @@
     "text3": "Currently, I'm also developing my own project Jammer - a platform for independent game developers."
   },
   "projects": {
-    "title": "My Projects",
+    "title": "My Experience",
     "jammer": {
       "title": "Jammer",
-      "description": "Platform for independent game developers, similar to itch.io. Full-featured marketplace with game upload, sales, and review systems.",
+      "description": "Platform for independent game developers, similar to itch.io. A full-featured marketplace with a system for uploading, selling, and reviewing games. Under my leadership, the project became the winner of the SFedU accelerator «SBS Creative 2024», the winner of the «Student Startup VI Round» competition, and a prize-winner of «Science Week» within the MMCS SFedU 2026.",
       "requisites": "Company Details",
       "role": "CEO",
       "fio": "Gorbanev V.O.",
@@ -36,23 +36,23 @@
     },
     "trucker": {
       "title": "Trucker",
-      "description": "Service for automating logistics for large companies, working on client configurations in the Customer Technologies Team."
+      "description": "Logistics automation service for large companies. I handle client configurations and initiate internal developments – for example, I created a chatbot to notify responsible teams about feature flag expiration in the corporate messenger. I am also taking an internal «GrowingUp» course under the guidance of a senior developer."
     },
     "viomitra": {
       "title": "VioMitra",
-      "description": "Developing an online auction service. Managing interns and participating in microservice development."
+      "description": "Online auction and trading service. I developed microservices: auction lifecycle management and a payment service with transaction processing. I led four interns, two of whom successfully completed onboarding and received job offers. Under my leadership, together with designers, a complete redesign of the platform was carried out according to approved mockups."
     },
     "purmarili": {
       "title": "Purmarili",
-      "description": "Web application for a restaurant chain in Rostov-on-Don. Includes custom admin panel for content management."
+      "description": "MPA for a restaurant chain in Rostov-on-Don. I fully developed and long-term maintained a custom admin panel for content management. The project was completed as an outsourcing – I was responsible for the full cycle from architecture to systematic updates."
     },
     "elina": {
-      "title": "GK \"Elina\"",
-      "description": "Web application for real estate sales in Rostov region and new republics. Filtering system, maps, administrative panel."
+      "title": "GK «Elina»",
+      "description": "Web application for selling real estate in the Rostov region and the new republics. I developed key modules: a complex property filtering system, map integration, and an admin panel for managing listings."
     },
     "prostor": {
-      "title": "JK \"Prostor\"",
-      "description": "The website of the residential complex. A separate module of the large project of the Elina Group."
+      "title": "JK «Prostor»",
+      "description": "Landing page for a residential complex – a separate module within the Elina Group ecosystem. I implemented an adaptive landing page featuring floor plans, infrastructure, and a request form. Integrated with the common property database."
     },
     "inDevelopment": "In Development",
     "prototype": "Prototype",
@@ -87,10 +87,10 @@
     "dateRanges": {
       "trucker": "December 2024 — Present",
       "jammer": "July 2024 — Present",
-      "elina": "August 2025 — Present",
+      "elina": "July 2025 — Present",
       "prostor": "August 2025 — Present",
-      "purmarili": "May 2024 — September 2024",
-      "viomitra": "July 2023 — December 2024"
+      "purmarili": "May 2024 — September 2025",
+      "viomitra": "June 2023 — December 2024"
     },
     "durations": {
       "trucker": "",

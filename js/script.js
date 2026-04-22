@@ -229,7 +229,7 @@ function updateExperienceDurations() {
         },
         {
             key: 'elina',
-            startDate: '2025-08-01',
+            startDate: '2025-07-01',
             endDate: 'present'
         },
         {
@@ -240,11 +240,11 @@ function updateExperienceDurations() {
         {
             key: 'purmarili',
             startDate: '2024-05-01',
-            endDate: '2024-09-01'
+            endDate: '2025-09-01'
         },
         {
             key: 'viomitra',
-            startDate: '2023-07-01',
+            startDate: '2023-06-01',
             endDate: '2024-12-01'
         }
     ];
