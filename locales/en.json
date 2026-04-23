@@ -10,7 +10,7 @@
     "brand": "VGARTG",
     "title": "Web-developer",
     "typing_first": "Creating",
-    "description": "I show the path of a person who works with real systems, writes code, makes decisions, and is responsible for their consequences.",
+    "description": "I show the path of a person who works with real systems, writes code, makes decisions, and is responsible for their consequences",
     "second_description": "I'm interested in products, architecture, business, and thinking, not info-noise :)",
     "projects": "My Experience",
     "contact": "Contact Me"
@@ -18,15 +18,15 @@
   "about": {
     "title": "About Me",
     "subtitle": "Fullstack Developer from Rostov-on-Don",
-    "text1": "I've been doing web development since 2023. I specialize in creating full-fledged web applications using modern technologies.",
-    "text2": "My approach combines attention to detail, commitment to creating clean and maintainable code, and understanding of business needs.",
-    "text3": "Currently, I'm also developing my own project Jammer - a platform for independent game developers."
+    "text1": "I've been doing web development since 2023. I specialize in creating full-fledged web applications using modern technologies",
+    "text2": "My approach combines attention to detail, commitment to creating clean and maintainable code, and understanding of business needs",
+    "text3": "Currently, I'm also developing my own project Jammer - a platform for independent game developers"
   },
   "projects": {
     "title": "My Experience",
     "jammer": {
       "title": "Jammer",
-      "description": "Platform for independent game developers, similar to itch.io. A full-featured marketplace with a system for uploading, selling, and reviewing games. Under my leadership, the project became the winner of the SFedU accelerator «SBS Creative 2024», the winner of the «Student Startup VI Round» competition, and a prize-winner of «Science Week» within the MMCS SFedU 2026.",
+      "description": "Platform for independent game developers, similar to itch.io. A full-featured marketplace with a system for uploading, selling, and reviewing games. Under my leadership, the project became the winner of the SFedU accelerator «SBS Creative 2024», the winner of the «Student Startup VI Round» competition, and a prize-winner of «Science Week» within the MMCS SFedU 2026",
       "requisites": "Company Details",
       "role": "CEO",
       "fio": "Gorbanev V.O.",
@@ -36,23 +36,23 @@
     },
     "trucker": {
       "title": "Trucker",
-      "description": "Logistics automation service for large companies. I handle client configurations and initiate internal developments – for example, I created a chatbot to notify responsible teams about feature flag expiration in the corporate messenger. I am also taking an internal «GrowingUp» course under the guidance of a senior developer."
+      "description": "Logistics automation service for large companies. I handle client configurations and initiate internal developments – for example, I created a chatbot to notify responsible teams about feature flag expiration in the corporate messenger. I am also taking an internal «GrowingUp» course under the guidance of a senior developer"
     },
     "viomitra": {
       "title": "VioMitra",
-      "description": "Online auction and trading service. I developed microservices: auction lifecycle management and a payment service with transaction processing. I led four interns, two of whom successfully completed onboarding and received job offers. Under my leadership, together with designers, a complete redesign of the platform was carried out according to approved mockups."
+      "description": "Online auction and trading service. I developed microservices: auction lifecycle management and a payment service with transaction processing. I led four interns, two of whom successfully completed onboarding and received job offers. Under my leadership, together with designers, a complete redesign of the platform was carried out according to approved mockups"
     },
     "purmarili": {
       "title": "Purmarili",
-      "description": "MPA for a restaurant chain in Rostov-on-Don. I fully developed and long-term maintained a custom admin panel for content management. The project was completed as an outsourcing – I was responsible for the full cycle from architecture to systematic updates."
+      "description": "MPA for a restaurant chain in Rostov-on-Don. I fully developed and long-term maintained a custom admin panel for content management. The project was completed as an outsourcing – I was responsible for the full cycle from architecture to systematic updates"
     },
     "elina": {
       "title": "GK «Elina»",
-      "description": "Web application for selling real estate in the Rostov region and the new republics. I developed key modules: a complex property filtering system, map integration, and an admin panel for managing listings."
+      "description": "Web application for selling real estate in the Rostov region and the new republics. I developed key modules: a complex property filtering system, map integration, and an admin panel for managing listings"
     },
     "prostor": {
       "title": "JK «Prostor»",
-      "description": "Landing page for a residential complex – a separate module within the Elina Group ecosystem. I implemented an adaptive landing page featuring floor plans, infrastructure, and a request form. Integrated with the common property database."
+      "description": "Landing page for a residential complex – a separate module within the Elina Group ecosystem. I implemented an adaptive landing page featuring floor plans, infrastructure, and a request form. Integrated with the common property database"
     },
     "inDevelopment": "In Development",
     "prototype": "Prototype",
@@ -103,6 +103,11 @@
   },
   "contact": {
     "title": "Contact Me",
-    "description": "Always open to new opportunities and interesting projects. Contact me and we'll discuss how I can help bring your ideas to life."
+    "description": "Always open to new opportunities and interesting projects. Contact me and we'll discuss how I can help bring your ideas to life"
+  },
+  "404": {
+    "title": "Page not found",
+    "message": "Sorry, this page does not exist. It may have been moved or you entered an incorrect address",
+    "home": "Go home"
   }
 }

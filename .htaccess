@@ -1,5 +1,8 @@
 RewriteEngine On
 
+# Кастомная страница 404
+ErrorDocument 404 /404.html
+
 # Редирект с WWW
 RewriteCond %{HTTP_HOST} ^www\.vgartg\.ru [NC]
 RewriteRule ^(.*)$ https://vgartg.ru/$1 [L,R=301]
@@ -8,7 +11,7 @@ RewriteRule ^(.*)$ https://vgartg.ru/$1 [L,R=301]
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [L,R=301]
 
-# Заголовки кэширования 
+# Заголовки кэширования
 <FilesMatch "\.(html)$">
     Header set Cache-Control "no-cache, must-revalidate"
 </FilesMatch>
