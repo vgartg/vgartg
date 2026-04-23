@@ -501,126 +501,54 @@ function initNavbarScroll() {
 }
 
 function initGSAPScrollAnimations() {
-    if (window.innerWidth <= 768) {
-        return;
-    }
-
+    if (window.innerWidth <= 768) return;
     if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
-        console.warn('GSAP or ScrollTrigger not available, using fallback animations');
         initMobileAnimations();
         return;
     }
 
     gsap.registerPlugin(ScrollTrigger);
 
-    try {
-        gsap.fromTo('.hero .fade-in', 
-            {
-                y: 50,
-                opacity: 0
-            },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 1,
-                stagger: 0.2,
-                delay: 0.3
-            }
-        );
+    if (document.querySelector('.hero .fade-in')) {
+        gsap.fromTo('.hero .fade-in', { y: 50, opacity: 0 }, {
+            y: 0, opacity: 1, duration: 1, stagger: 0.2, delay: 0.3
+        });
+    }
 
-        gsap.fromTo('.about-content', 
-            {
-                y: 80,
-                opacity: 0
-            },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 1,
-                scrollTrigger: {
-                    trigger: '.about',
-                    start: 'top 80%',
-                    end: 'bottom 40%',
-                    toggleActions: 'play none none reverse'
-                }
-            }
-        );
+    if (document.querySelector('.about-content')) {
+        gsap.fromTo('.about-content', { y: 80, opacity: 0 }, {
+            y: 0, opacity: 1, duration: 1,
+            scrollTrigger: { trigger: '.about', start: 'top 80%', end: 'bottom 40%', toggleActions: 'play none none reverse' }
+        });
+    }
 
-        gsap.fromTo('.skill-tag', 
-            {
-                x: -50,
-                opacity: 0
-            },
-            {
-                x: 0,
-                opacity: 1,
-                duration: 0.6,
-                stagger: 0.08,
-                scrollTrigger: {
-                    trigger: '.skills',
-                    start: 'top 85%',
-                    toggleActions: 'play none none reverse'
-                }
-            }
-        );
+    if (document.querySelector('.skill-tag')) {
+        gsap.fromTo('.skill-tag', { x: -50, opacity: 0 }, {
+            x: 0, opacity: 1, duration: 0.6, stagger: 0.08,
+            scrollTrigger: { trigger: '.skills', start: 'top 85%', toggleActions: 'play none none reverse' }
+        });
+    }
 
-        gsap.fromTo('.project-card', 
-            {
-                y: 80,
-                opacity: 0,
-                scale: 0.9
-            },
-            {
-                y: 0,
-                opacity: 1,
-                scale: 1,
-                duration: 0.8,
-                stagger: 0.15,
-                scrollTrigger: {
-                    trigger: '.projects-grid',
-                    start: 'top 85%',
-                    toggleActions: 'play none none reverse'
-                }
-            }
-        );
+    if (document.querySelector('.project-card')) {
+        gsap.fromTo('.project-card', { y: 80, opacity: 0, scale: 0.9 }, {
+            y: 0, opacity: 1, scale: 1, duration: 0.8, stagger: 0.15,
+            scrollTrigger: { trigger: '.projects-grid', start: 'top 85%', toggleActions: 'play none none reverse' }
+        });
+    }
 
-        gsap.fromTo('.experience-item', 
-            {
-                x: -60,
-                opacity: 0
-            },
-            {
-                x: 0,
-                opacity: 1,
-                duration: 0.7,
-                stagger: 0.1,
-                scrollTrigger: {
-                    trigger: '.experience-timeline',
-                    start: 'top 80%',
-                    toggleActions: 'play none none reverse'
-                }
-            }
-        );
+    // Вот здесь была ошибка - проверяем существование .experience-item
+    if (document.querySelector('.experience-item')) {
+        gsap.fromTo('.experience-item', { x: -60, opacity: 0 }, {
+            x: 0, opacity: 1, duration: 0.7, stagger: 0.1,
+            scrollTrigger: { trigger: '.experience-timeline', start: 'top 80%', toggleActions: 'play none none reverse' }
+        });
+    }
 
-        gsap.fromTo('.contact-content', 
-            {
-                y: 60,
-                opacity: 0
-            },
-            {
-                y: 0,
-                opacity: 1,
-                duration: 1,
-                scrollTrigger: {
-                    trigger: '.contact',
-                    start: 'top 85%',
-                    toggleActions: 'play none none reverse'
-                }
-            }
-        );
-    } catch (error) {
-        console.error('GSAP animation error:', error);
-        initMobileAnimations();
+    if (document.querySelector('.contact-content')) {
+        gsap.fromTo('.contact-content', { y: 60, opacity: 0 }, {
+            y: 0, opacity: 1, duration: 1,
+            scrollTrigger: { trigger: '.contact', start: 'top 85%', toggleActions: 'play none none reverse' }
+        });
     }
 }
 
