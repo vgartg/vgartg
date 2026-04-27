@@ -172,7 +172,7 @@ function calculateMonthDifference(startDate, endDate = new Date()) {
     const end = endDate === 'present' ? new Date() : new Date(endDate);
     
     const yearsDifference = end.getFullYear() - start.getFullYear();
-    const monthsDifference = end.getMonth() - start.getMonth();
+    const monthsDifference = end.getMonth() - start.getMonth() + 1;
     
     return yearsDifference * 12 + monthsDifference;
 }
