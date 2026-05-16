@@ -1,4 +1,4 @@
-### 💭 How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
+### 💭 How to contact me: [![Telegram Badge](https://img.shields.io/badge/-bbblobs-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/bbblobs)
 
 <div align="center">
   <img height="200" src="https://i.pinimg.com/originals/7f/2c/50/7f2c5092eb778b3423f634055ffea540.gif"/>
