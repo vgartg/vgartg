@@ -25,7 +25,7 @@
   "projects": {
     "title": "My Experience",
     "jammer": {
-      "title": "Jammer (Tech Lead / Co-Founder)",
+      "title": "Jammer",
       "description": "Game marketplace (itch.io‑like) with upload, sale, and review system. Winner of SFedU accelerator SBS Creative 2024, $12k grant from FSI. Built payment module with escrow‑like scheme, implemented GitOps (Kamal + GitHub Actions), cut FCP from 1.8s to 0.4s via Hotwire",
       "requisites": "Company Details",
       "role": "CEO",
@@ -35,11 +35,11 @@
       "ogrn": "OGRN"
     },
     "trucker": {
-      "title": "Trucker (Backend Engineer)",
+      "title": "Trucker",
       "description": "High‑load B2B TMS platform for Magnit, Miratorg, etc. Built 7 API integrations, set up Sentry monitoring (reduced MTTR from 30 to 8 min), implemented a bot for feature flag audit (saving 6 man‑days/week), deployed PostgreSQL replica reducing master load by 12%"
     },
     "viomitra": {
-      "title": "VioMitra (Team Lead / Backend)",
+      "title": "VioMitra",
       "description": "Online auction platform (bankruptcy, M&A). Built an ASP.NET Core microservice with SignalR, optimized SQL queries (3.9s → 0.18s). Led 4 backend interns → 2 received job offers. Cut onboarding time from 3 weeks to 12 days"
     },
     "purmarili": {
