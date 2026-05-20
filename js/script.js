@@ -219,7 +219,7 @@ function updateExperienceDurations() {
     const experienceData = [
         {
             key: 'trucker',
-            startDate: '2024-12-01',
+            startDate: '2024-11-01',
             endDate: 'present'
         },
         {
@@ -244,8 +244,8 @@ function updateExperienceDurations() {
         },
         {
             key: 'viomitra',
-            startDate: '2023-06-01',
-            endDate: '2024-12-01'
+            startDate: '2023-04-01',
+            endDate: '2024-11-01'
         }
     ];
 
