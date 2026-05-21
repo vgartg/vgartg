@@ -40,7 +40,7 @@
     },
     "viomitra": {
       "title": "VioMitra",
-      "description": "Online auction platform (bankruptcy, M&A). Built an ASP.NET Core microservice with SignalR, optimized SQL queries (3.9s → 0.18s). Led 4 backend interns → 2 received job offers. Cut onboarding time from 3 weeks to 12 days"
+      "description": "Online auction platform (bankruptcy, M&A). Built an Go (Gin + WebSocket), optimized SQL queries (3.9s → 0.18s). Led 4 backend interns → 2 received job offers. Cut onboarding time from 3 weeks to 12 days"
     },
     "purmarili": {
       "title": "Purmarili",
