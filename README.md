@@ -6,4 +6,4 @@
 
 ---
 
-![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=vgartg&left_text=visitors&left_color=black&right_color=red)
+![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=vgartg&left_text=visitors&left_color=black&right_color=blue)
