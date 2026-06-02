@@ -1,4 +1,4 @@
-[![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
+### 💭 How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
 
 <div align="center">
   <img height="200" src="https://i.pinimg.com/originals/7f/2c/50/7f2c5092eb778b3423f634055ffea540.gif"/>
@@ -8,25 +8,16 @@
 
 <div align="center">
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vgartg&show_icons=true&hide_border=true&title_color=4f8ef7&icon_color=4f8ef7&text_color=c9d1d9&bg_color=0d1117&count_private=true&include_all_commits=true)](https://github.com/vgartg)
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vgartg&layout=compact&hide_border=true&title_color=4f8ef7&text_color=c9d1d9&bg_color=0d1117&langs_count=8)](https://github.com/vgartg)
-
-</div>
-
-<div align="center">
-
 [![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=vgartg&theme=dark&hide_border=true&stroke=4f8ef7&ring=4f8ef7&fire=4f8ef7&currStreakLabel=4f8ef7)](https://github.com/vgartg)
 
 </div>
 
 ---
 
-**Projects**
-
 | Repository | Description | Language | Stars |
 |---|---|---|:---:|
-| [ACI-Bot](https://github.com/vgartg/ACI-Bot) | Control a server host computer via Telegram | Go | 18 |
 | [jammer](https://github.com/vgartg/jammer) | Platform for hosting game jams and distributing assets | HTML | 18 |
+| [ACI-Bot](https://github.com/vgartg/ACI-Bot) | Control a server host computer via Telegram | Go | 18 |
 | [Random-Data-Generator](https://github.com/vgartg/Random-Data-Generator) | Ruby library with a catalog of data generators | Ruby | 18 |
 | [Tic-Tac-Toe](https://github.com/vgartg/Tic-Tac-Toe) | Full-stack Tic-Tac-Toe with two AI opponents | Java | 17 |
 | [Go-Auction](https://github.com/vgartg/Go-Auction) | Real-time auction engine | Go | 15 |
