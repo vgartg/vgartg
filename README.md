@@ -25,6 +25,7 @@
 | [TG-Bot-with-DeepSeek-API-Integration](https://github.com/vgartg/TG-Bot-with-DeepSeek-API-Integration) | Telegram bot answering civil-law questions via DeepSeek | Python | 11 |
 | [BlockCraft-Learner-Game](https://github.com/vgartg/BlockCraft-Learner-Game) | PyGame sandbox built to teach Python | Python | 10 |
 | [Web-Parsing-Bot](https://github.com/vgartg/Web-Parsing-Bot) | Parsing bot for code generation on a web service | Python | 10 |
+| [Splyshechka](https://github.com/Den0110/splyshechka) | Mobile app that helps you track and improve your sleep with a customizable alarm | Dart | 5 |
 | [Claude-Communication-Bot](https://github.com/vgartg/Claude-Communication-Bot) | Telegram bot for chatting during an active Claude session | Python | 3 |
 | [YART-Tent](https://github.com/vgartg/YART-Tent) | Vanilla SPA for YART-Tent | - | 3 |
 | [Panther-and-Buninsky](https://github.com/vgartg/Panther-and-Buninsky) | Vanilla SPA for Panther & Buninsky | - | 2 |
