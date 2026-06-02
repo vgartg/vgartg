@@ -2069,3 +2069,72 @@ body:not(.mouse-move) #cursor-dot {
     #cursor-circle, #cursor-dot { display: none !important; }
     body, * { cursor: auto !important; }
 }
+
+.resume-download {
+    margin-top: 2rem;
+}
+
+.resume-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    border-radius: 0.5rem;
+    color: var(--light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    background: transparent;
+}
+
+.resume-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.08), rgba(16, 185, 129, 0.05));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.resume-btn:hover {
+    border-color: rgba(59, 130, 246, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(59, 130, 246, 0.12);
+}
+
+.resume-btn:hover::before {
+    opacity: 1;
+}
+
+.resume-btn-text {
+    position: relative;
+}
+
+.resume-ru-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--gray);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 0.25rem;
+    padding: 0.2rem 0.45rem;
+    position: relative;
+}
+
+.resume-btn-icon {
+    font-size: 0.8rem;
+    color: var(--primary);
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.resume-btn:hover .resume-btn-icon {
+    transform: translate(2px, -2px);
+}
