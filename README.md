@@ -16,7 +16,7 @@
 
 | Repository | Description | Language | Stars |
 |---|---|---|:---:|
-| [jammer](https://github.com/vgartg/jammer) | Platform for hosting game jams and distributing assets | HTML | 18 |
+| [jammer](https://github.com/vgartg/jammer) | Platform for hosting game jams and distributing assets | Ruby | 18 |
 | [ACI-Bot](https://github.com/vgartg/ACI-Bot) | Control a server host computer via Telegram | Go | 18 |
 | [Random-Data-Generator](https://github.com/vgartg/Random-Data-Generator) | Ruby library with a catalog of data generators | Ruby | 18 |
 | [Tic-Tac-Toe](https://github.com/vgartg/Tic-Tac-Toe) | Full-stack Tic-Tac-Toe with two AI opponents | Java | 17 |
@@ -26,8 +26,8 @@
 | [BlockCraft-Learner-Game](https://github.com/vgartg/BlockCraft-Learner-Game) | PyGame sandbox built to teach Python | Python | 10 |
 | [Web-Parsing-Bot](https://github.com/vgartg/Web-Parsing-Bot) | Parsing bot for code generation on a web service | Python | 10 |
 | [Claude-Communication-Bot](https://github.com/vgartg/Claude-Communication-Bot) | Telegram bot for chatting during an active Claude session | Python | 3 |
-| [YART-Tent](https://github.com/vgartg/YART-Tent) | Vanilla SPA for YART-Tent | CSS | 3 |
-| [Panther-and-Buninsky](https://github.com/vgartg/Panther-and-Buninsky) | Vanilla SPA for Panther & Buninsky | HTML | 2 |
+| [YART-Tent](https://github.com/vgartg/YART-Tent) | Vanilla SPA for YART-Tent | - | 3 |
+| [Panther-and-Buninsky](https://github.com/vgartg/Panther-and-Buninsky) | Vanilla SPA for Panther & Buninsky | - | 2 |
 
 ---
 
