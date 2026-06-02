@@ -1,7 +1,49 @@
-### 💭 How to contact me: [![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
+[![Telegram Badge](https://img.shields.io/badge/-vgartg-blue?style=flat&logo=Telegram&logoColor=white)](https://t.me/vgartg)
 
 <div align="center">
   <img height="200" src="https://i.pinimg.com/originals/7f/2c/50/7f2c5092eb778b3423f634055ffea540.gif"/>
+</div>
+
+---
+
+<div align="center">
+
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=vgartg&show_icons=true&hide_border=true&title_color=4f8ef7&icon_color=4f8ef7&text_color=c9d1d9&bg_color=0d1117&count_private=true&include_all_commits=true)](https://github.com/vgartg)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=vgartg&layout=compact&hide_border=true&title_color=4f8ef7&text_color=c9d1d9&bg_color=0d1117&langs_count=8)](https://github.com/vgartg)
+
+</div>
+
+<div align="center">
+
+[![Streak Stats](https://github-readme-streak-stats.herokuapp.com/?user=vgartg&theme=dark&hide_border=true&stroke=4f8ef7&ring=4f8ef7&fire=4f8ef7&currStreakLabel=4f8ef7)](https://github.com/vgartg)
+
+</div>
+
+---
+
+**Projects**
+
+| Repository | Description | Language | Stars |
+|---|---|---|:---:|
+| [ACI-Bot](https://github.com/vgartg/ACI-Bot) | Control a server host computer via Telegram | Go | 18 |
+| [jammer](https://github.com/vgartg/jammer) | Platform for hosting game jams and distributing assets | HTML | 18 |
+| [Random-Data-Generator](https://github.com/vgartg/Random-Data-Generator) | Ruby library with a catalog of data generators | Ruby | 18 |
+| [Tic-Tac-Toe](https://github.com/vgartg/Tic-Tac-Toe) | Full-stack Tic-Tac-Toe with two AI opponents | Java | 17 |
+| [Go-Auction](https://github.com/vgartg/Go-Auction) | Real-time auction engine | Go | 15 |
+| [Elevator-Simulator](https://github.com/vgartg/Elevator-Simulator) | Simulator of a heavily loaded elevator in a multi-story building | Go | 13 |
+| [TG-Bot-with-DeepSeek-API-Integration](https://github.com/vgartg/TG-Bot-with-DeepSeek-API-Integration) | Telegram bot answering civil-law questions via DeepSeek | Python | 11 |
+| [BlockCraft-Learner-Game](https://github.com/vgartg/BlockCraft-Learner-Game) | PyGame sandbox built to teach Python | Python | 10 |
+| [Web-Parsing-Bot](https://github.com/vgartg/Web-Parsing-Bot) | Parsing bot for code generation on a web service | Python | 10 |
+| [Claude-Communication-Bot](https://github.com/vgartg/Claude-Communication-Bot) | Telegram bot for chatting during an active Claude session | Python | 3 |
+| [YART-Tent](https://github.com/vgartg/YART-Tent) | Vanilla SPA for YART-Tent | CSS | 3 |
+| [Panther-and-Buninsky](https://github.com/vgartg/Panther-and-Buninsky) | Vanilla SPA for Panther & Buninsky | HTML | 2 |
+
+---
+
+<div align="center">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=vgartg&theme=react-dark&hide_border=true&area=true)](https://github.com/vgartg)
+
 </div>
 
 ---
