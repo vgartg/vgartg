@@ -244,7 +244,7 @@ function updateExperienceDurations() {
         },
         {
             key: 'viomitra',
-            startDate: '2023-04-01',
+            startDate: '2022-12-01',
             endDate: '2024-11-01'
         }
     ];
@@ -274,7 +274,7 @@ function updateDateRanges() {
         'elina': { start: 'Июль 2025', end: 'настоящее время', en_start: 'July 2025', en_end: 'Present' },
         'prostor': { start: 'Август 2025', end: 'настоящее время', en_start: 'August 2025', en_end: 'Present' },
         'purmarili': { start: 'Май 2024', end: 'Сентябрь 2025', en_start: 'May 2024', en_end: 'September 2025' },
-        'viomitra': { start: 'Апрель 2023', end: 'Ноябрь 2024', en_start: 'April 2023', en_end: 'November 2024' }
+        'viomitra': { start: 'Декабрь 2022', end: 'Ноябрь 2024', en_start: 'December 2022', en_end: 'November 2024' }
     };
 
     Object.keys(dateRanges).forEach(key => {
