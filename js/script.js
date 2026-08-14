@@ -230,12 +230,12 @@ function updateExperienceDurations() {
         {
             key: 'elina',
             startDate: '2025-07-01',
-            endDate: 'present'
+            endDate: '2026-08-01'
         },
         {
             key: 'prostor',
             startDate: '2025-08-01',
-            endDate: 'present'
+            endDate: '2026-07-01'
         },
         {
             key: 'purmarili',
@@ -271,10 +271,10 @@ function updateDateRanges() {
     const dateRanges = {
         'trucker': { start: 'Ноябрь 2024', end: 'настоящее время', en_start: 'November 2024', en_end: 'Present' },
         'jammer': { start: 'Июль 2024', end: 'настоящее время', en_start: 'July 2024', en_end: 'Present' },
-        'elina': { start: 'Июль 2025', end: 'настоящее время', en_start: 'July 2025', en_end: 'Present' },
-        'prostor': { start: 'Август 2025', end: 'настоящее время', en_start: 'August 2025', en_end: 'Present' },
+        'elina': { start: 'Июнь 2025', end: 'Август 2026', en_start: 'June 2025', en_end: 'September 2026' },
+        'prostor': { start: 'Август 2025', end: 'Август 2026', en_start: 'August 2025', en_end: 'August 2026' },
         'purmarili': { start: 'Май 2024', end: 'Сентябрь 2025', en_start: 'May 2024', en_end: 'September 2025' },
-        'viomitra': { start: 'Декабрь 2022', end: 'Ноябрь 2024', en_start: 'December 2022', en_end: 'November 2024' }
+        'viomitra': { start: 'Ноябрь 2022', end: 'Ноябрь 2024', en_start: 'November 2022', en_end: 'November 2024' }
     };
 
     Object.keys(dateRanges).forEach(key => {
