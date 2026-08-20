@@ -42,7 +42,7 @@
     },
     "viomitra": {
       "title": "VioMitra",
-      "description": "Online auction platform (bankruptcy, M&A). Built an Go (Gin + WebSocket), optimized SQL queries (3.9s → 0.18s). Led 4 backend interns → 2 received job offers. Cut onboarding time from 3 weeks to 12 days"
+      "description": "Online auction platform (bankruptcy, M&A). Built a microservice on Ruby on Rails (ActionCable/AnyCable), optimized SQL queries (3.9s → 0.18s). Led 4 backend interns → 2 received job offers. Cut onboarding time from 3 weeks to 12 days"
     },
     "purmarili": {
       "title": "Purmarili",
@@ -87,8 +87,8 @@
       "company": "Purmarili"
     },
     "dateRanges": {
-      "trucker": "November 2024 — Present",
-      "jammer": "July 2024 — Present",
+      "trucker": "December 2024 — Present",
+      "jammer": "July 2024 — August 2026",
       "elina": "June 2025 — August 2026",
       "prostor": "August 2025 — August 2026",
       "purmarili": "May 2024 — September 2025",
