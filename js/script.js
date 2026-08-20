@@ -269,8 +269,8 @@ function updateExperienceDurations() {
 
 function updateDateRanges() {
     const dateRanges = {
-        'trucker': { start: 'Ноябрь 2024', end: 'настоящее время', en_start: 'November 2024', en_end: 'Present' },
-        'jammer': { start: 'Июль 2024', end: 'настоящее время', en_start: 'July 2024', en_end: 'Present' },
+        'trucker': { start: 'Декабрь 2024', end: 'настоящее время', en_start: 'December 2024', en_end: 'Present' },
+        'jammer': { start: 'Июль 2024', end: 'Август 2026', en_start: 'July 2024', en_end: 'August 2026' },
         'elina': { start: 'Июнь 2025', end: 'Сентябрь 2026', en_start: 'June 2025', en_end: 'September 2026' },
         'prostor': { start: 'Август 2025', end: 'Август 2026', en_start: 'August 2025', en_end: 'August 2026' },
         'purmarili': { start: 'Май 2024', end: 'Сентябрь 2025', en_start: 'May 2024', en_end: 'September 2025' },

@@ -37,11 +37,11 @@
       "ogrn": "OGRN"
     },
     "trucker": {
-      "title": "Trucker",
+      "title": "Trucker Group",
       "description": "High‑load B2B TMS platform for Magnit, Miratorg, etc. Built 7 API integrations, set up Sentry monitoring (reduced MTTR from 30 to 8 min), implemented a bot for feature flag audit (saving 6 man‑days/week), deployed PostgreSQL replica reducing master load by 12%"
     },
     "viomitra": {
-      "title": "VioMitra",
+      "title": "VIOMITRA",
       "description": "Online auction platform (bankruptcy, M&A). Built a microservice on Ruby on Rails (ActionCable/AnyCable), optimized SQL queries (3.9s → 0.18s). Led 4 backend interns → 2 received job offers. Cut onboarding time from 3 weeks to 12 days"
     },
     "purmarili": {
@@ -63,16 +63,16 @@
   "experience": {
     "title": "Work Experience",
     "trucker": {
-      "title": "Backend Engineer",
-      "company": "Trucker"
+      "title": "Backend Developer",
+      "company": "Trucker Group"
     },
     "jammer": {
-      "title": "Tech Lead / Co-Founder",
+      "title": "Founder / Backend Developer",
       "company": "Jammer"
     },
     "viomitra": {
-      "title": "Team Lead / Backend Developer",
-      "company": "VioMitra"
+      "title": "Backend Developer",
+      "company": "VIOMITRA"
     },
     "elina": {
       "title": "Fullstack Developer",
