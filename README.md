@@ -20,7 +20,7 @@
 | [ACI-Bot](https://github.com/vgartg/ACI-Bot) | Control a server host computer via Telegram | Go | 18 |
 | [Random-Data-Generator](https://github.com/vgartg/Random-Data-Generator) | Ruby library with a catalog of data generators | Ruby | 18 |
 | [Tic-Tac-Toe](https://github.com/vgartg/Tic-Tac-Toe) | Full-stack Tic-Tac-Toe with two AI opponents | Java | 17 |
-| [Go-Auction](https://github.com/vgartg/Go-Auction) | Real-time auction engine | Go | 15 |
+| [Go-Auction](https://github.com/vgartg/Go-Auction) | Real-time auction engine | Go | 16 |
 | [Elevator-Simulator](https://github.com/vgartg/Elevator-Simulator) | Simulator of a heavily loaded elevator in a multi-story building | Go | 13 |
 | [TG-Bot-with-DeepSeek-API-Integration](https://github.com/vgartg/TG-Bot-with-DeepSeek-API-Integration) | Telegram bot answering civil-law questions via DeepSeek | Python | 11 |
 | [BlockCraft-Learner-Game](https://github.com/vgartg/BlockCraft-Learner-Game) | PyGame sandbox built to teach Python | Python | 10 |
