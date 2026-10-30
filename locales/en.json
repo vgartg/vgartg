@@ -1,67 +1,67 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About me",
     "projects": "Projects",
     "experience": "Experience",
-    "contact": "Contact"
+    "contact": "Contacts"
   },
   "hero": {
     "brand": "VGARTG",
     "title": "Backend Developer",
-    "typing_first": "Building",
-    "description": "I show the path of a person who works with real systems, writes code, makes decisions, and takes responsibility for their outcomes",
-    "second_description": "Interested in products, architecture, business, and thinking — not info-noise :)",
-    "projects": "My Experience",
-    "contact": "Contact Me"
+    "typing_first": "I create",
+    "description": "I show the path of a person who works with real systems, writes code, makes decisions, and is responsible for their consequences",
+    "second_description": "I am interested in products, architecture, business, and thinking, not info noise :)",
+    "projects": "My experience",
+    "contact": "Contact me"
   },
   "about": {
-    "title": "About Me",
-    "subtitle": "Backend & Team Lead Developer",
-    "text1": "Developing since 2022. Worked with high‑load B2B systems, TMS platforms, auctions.",
-    "text2": "My approach: clean code, observability, automation, and business value.",
-    "text3": "Co‑founder & Tech Lead of Jammer (accelerator winner, $12k grant)",
+    "title": "About me",
+    "subtitle": "Backend & Team Lead developer",
+    "text1": "I have been developing since 2022. Worked with high-load B2B systems, TMS and B2B/B2G/B2C platforms.",
+    "text2": "My approach is clean code, observability, automation, and understanding of business value.",
+    "text3": "Co-founder of the Jammer project (accelerator winner, 1 million rubles grant)",
     "resume_btn": "Open CV",
     "resume_ru_badge": "Russian only"
   },
   "projects": {
-    "title": "My Experience",
+    "title": "My experience",
     "jammer": {
-      "title": "Jammer",
-      "description": "Game marketplace (itch.io‑like) with upload, sale, and review system. Winner of SFedU accelerator SBS Creative 2024, $12k grant from FSI",
-      "requisites": "Company Details",
-      "role": "CEO",
+      "title": "",
+      "description": "",
+      "requisites": "Organization details",
+      "role": "Founder",
       "fio": "Gorbanev V.O.",
       "inn": "INN",
       "kpp": "KPP",
       "ogrn": "OGRN"
     },
     "trucker": {
-      "title": "Trucker",
-      "description": "High‑load B2B TMS platform for Magnit, Miratorg, etc"
+      "title": "",
+      "description": ""
     },
     "viomitra": {
-      "title": "VioMitra",
-      "description": "Online auction platform (bankruptcy, M&A)"
+      "title": "",
+      "description": ""
     },
     "purmarili": {
-      "title": "Purmarili",
-      "description": "MPA for a restaurant chain. Fully developed and long‑term maintained a custom admin panel for content management. The project was completed as outsourcing"
+      "title": "",
+      "description": ""
     },
     "elina": {
-      "title": "Elina Group",
-      "description": "Web application for real estate sales. Developed key modules: complex property filtering system, map integration, and admin panel for listing management"
+      "title": "",
+      "description": ""
     },
     "prostor": {
-      "title": "Prostor Residential Complex",
-      "description": "Landing page for a residential complex – a separate module within the Elina Group ecosystem. Implemented an adaptive landing page featuring floor plans, infrastructure, and a request form. Integrated with the common property database"
+      "title": "",
+      "description": ""
     },
-    "inDevelopment": "In Development",
+    "inDevelopment": "In development",
     "prototype": "Prototype",
     "product": "Product"
   },
   "experience": {
-    "title": "Work Experience",
+    "title": "Work experience",
     "trucker": {
       "title": "Backend Developer",
       "company": "Trucker Group"
@@ -80,7 +80,7 @@
     },
     "prostor": {
       "title": "Fullstack Developer",
-      "company": "Prostor RC"
+      "company": "Prostor Residential Complex"
     },
     "purmarili": {
       "title": "Fullstack Developer",
@@ -104,8 +104,8 @@
     }
   },
   "contact": {
-    "title": "Contact Me",
-    "description": "Always open to new opportunities and interesting projects. Contact me and we'll discuss how I can help bring your ideas to life"
+    "title": "Contact me",
+    "description": "Always open to new opportunities and interesting projects. Contact me and we will discuss how I can help bring your ideas to life"
   },
   "404": {
     "title": "Page not found",
