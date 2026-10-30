@@ -29,13 +29,6 @@
 | [Claude-Communication-Bot](https://github.com/vgartg/Claude-Communication-Bot) | Telegram bot for chatting during an active Claude session | Python | 3 |
 | [YART-Tent](https://github.com/vgartg/YART-Tent) | Vanilla SPA for YART-Tent | — | 3 |
 | [Panther-and-Buninsky](https://github.com/vgartg/Panther-and-Buninsky) | Vanilla SPA for Panther & Buninsky | — | 2 |
----
-
-<div align="center">
-
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=vgartg&theme=react-dark&hide_border=true&area=true)](https://github.com/vgartg)
-
-</div>
 
 ---
 
