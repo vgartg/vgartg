@@ -14,8 +14,8 @@
 
 ---
 
-| Repository | Description | Language | Stars |
-|---|---|---|---|
+| Repository | Description | Language | Stars (tracked automatically via GitHub Actions) |
+|:---:|:---:|:---:|:---:|
 | [jammer](https://github.com/vgartg/jammer) | Platform for hosting game jams and distributing assets | Ruby | 19 |
 | [ACI-Bot](https://github.com/vgartg/ACI-Bot) | Control a server host computer via Telegram | Go | 18 |
 | [Random-Data-Generator](https://github.com/vgartg/Random-Data-Generator) | Ruby library with a catalog of data generators | Ruby | 18 |
